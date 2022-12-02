@@ -1,11 +1,15 @@
 import React from "react";
-// We import our Greeting component from the components folder so that we can eventually return it
-import Greeting from "./components/Greeting";
+import Navbar from "./components/navbar";
 
-// App is our main component at the top level of our App that references other components
+// declare any variables
+const aboutNav = 'About Me';
+const portfolioNav = 'Portfolio';
+const contactNav = 'Contact';
+const resumeNav = 'Resume';
+
+// call components to be rendered
 function App() {
-  return <Greeting />;
+  return <Navbar about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav} />;
 }
 
-// Here we export the App component so that it can be made available in `index.js`
 export default App;
