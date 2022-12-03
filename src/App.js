@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
+import Welcome from "./components/Welcome";
 
 // general css for the page
 import './assets/css/style.css';
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav} />
+      <Welcome />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/navbar.css';
-import {BouncyDiv, PulsingDiv, RubberBandDiv} from './animations';
+import {BouncyDiv, PulsingDiv, RubberBandDiv} from './Animations';
 
 function Navbar(props) {
   return (
