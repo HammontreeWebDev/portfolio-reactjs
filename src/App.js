@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarAnimation, NavbarReplace } from "./components/Navbar";
+import { NavbarAnimation, NavbarDeleteName } from "./components/Navbar";
 import { WelcomeAnimation } from "./components/Welcome";
 
 // general css for the page
@@ -22,10 +22,10 @@ export function Init() {
 };
 
 // function to replace name in navbar with logo/name in body
-export function ReplaceName() {
+export function DeleteName() {
   return (
     <>
-    <NavbarReplace about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>
+    <NavbarDeleteName about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>
     </>
   )
 }

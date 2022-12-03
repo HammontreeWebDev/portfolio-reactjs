@@ -34,7 +34,7 @@ export function NavbarAnimation(props) {
   );
 }
 
-export function NavbarReplace(props) {
+export function NavbarDeleteName(props) {
   return (
 
     <nav className='navbar nav-bg'>
