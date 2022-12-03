@@ -9,6 +9,12 @@
     --shade2: #97B0BF;
     --shade3: #657580;
     --shade4: #323B40;
+
+    /* Google fonts: */
+    --rubik: "'Rubik', sans-serif";
+    --dirt: "'Rubik Dirt', cursive";
+    --distressed: "'Rubik Distressed', cursive";
+
 }
 
 body {

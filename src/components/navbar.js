@@ -3,7 +3,7 @@ import '../assets/css/navbar.css';
 
 function Navbar(props) {
   return (
-      <nav className='navbar custom-bg'>
+      <nav className='navbar nav-bg'>
         <div className='container-fluid'>
           <h1>Kaileb Hammontree</h1>
           <a className='navbar-brand' href="#">{props.about}</a>
