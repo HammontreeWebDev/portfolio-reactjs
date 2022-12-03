@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/navbar.css';
-import {BouncyDiv, PulsingDiv, RubberBandDiv} from './Animations';
+import { BouncyDiv, PulsingDiv, RubberBandDiv, Hinge } from './Animations';
 
 function Navbar(props) {
   return (
@@ -9,28 +9,28 @@ function Navbar(props) {
         <div className='container-fluid'>
 
           <PulsingDiv>
-          <h1 className='name-font'>Kaileb Hammontree</h1>
+              <h1 className='name-font'>Kaileb Hammontree</h1>
           </PulsingDiv>
 
           <RubberBandDiv>
-          <a className='nav-font' href="#">{props.about}</a>
+            <a className='nav-font' href="#">{props.about}</a>
           </RubberBandDiv>
 
           <RubberBandDiv>
-          <a className='nav-font' href="#">{props.portfolio}</a>
+            <a className='nav-font' href="#">{props.portfolio}</a>
           </RubberBandDiv>
 
           <RubberBandDiv>
-          <a className='nav-font' href="#">{props.contact}</a>
+            <a className='nav-font' href="#">{props.contact}</a>
           </RubberBandDiv>
 
           <RubberBandDiv>
-          <a className='nav-font' href="#">{props.resume}</a>
+            <a className='nav-font' href="#">{props.resume}</a>
           </RubberBandDiv>
 
         </div>
       </nav>
-      </BouncyDiv>
+    </BouncyDiv>
   );
 }
 
