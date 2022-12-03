@@ -1,3 +1,16 @@
+:root {
+    /* color scheme: */
+    --light-blue: #C9EAFF;
+    --light-pink: #FFE3E3;
+    --matte-blue: #7B9DB3;
+
+    /* shades of --light-blue (darker with increasing number): */
+    --shade1: #B5D3E6;
+    --shade2: #97B0BF;
+    --shade3: #657580;
+    --shade4: #323B40;
+}
+
 body {
     /* set background image for entire body */
     /* This picture was taken on a family trip in TN! */
