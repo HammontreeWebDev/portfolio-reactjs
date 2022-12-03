@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Init, DeleteName } from './App';
+import { Init, DeleteName, LandingPage } from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(<Init />, document.getElementById('root'));
 
 setTimeout(() => {
-    console.log('This message shows after 3 seconds on page load');
     ReactDOM.render(<DeleteName />, document.getElementById('root'));
 }, 2300)
+
+setTimeout(() => {
+    ReactDOM.render(<LandingPage />, document.getElementById('root'));
+}, 4300)

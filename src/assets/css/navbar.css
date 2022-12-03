@@ -1,16 +1,26 @@
 /* Navbar component is included in App.js, therefore, we have access to the style.css variables */
 
 .nav-bg {
-background-color: var(--trans-shade2);
+    background-color: var(--trans-shade2);
 }
+
+.main-nav-bg {
+    background-color: var(--trans-shade4);
+}
+
 .name-font {
     font-family: var(--dirt);
     color: var(--shade4);
     font-size: 400%;
 }
-.nav-font{
+
+.nav-font {
     text-decoration: none;
     font-family: var(--rubik);
     color: var(--light-pink);
     font-size: 150%;
+}
+
+.nav-img {
+    max-width: 25vw;
 }
