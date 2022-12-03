@@ -1,6 +1,6 @@
 import React from "react";
 import { NavbarAnimation, NavbarDeleteName } from "./components/Navbar";
-import { WelcomeAnimation } from "./components/Welcome";
+import { WelcomeAnimation, DeleteWelcome } from "./components/Welcome";
 
 // general css for the page
 import './assets/css/style.css';
@@ -26,6 +26,7 @@ export function DeleteName() {
   return (
     <>
     <NavbarDeleteName about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>
+    <DeleteWelcome/>
     </>
   )
 }

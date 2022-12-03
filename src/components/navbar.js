@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/navbar.css';
-import { BouncyDiv, PulsingDiv, RubberBandDiv, Hinge } from './Animations';
+import { BouncyDiv, PulsingDiv, RubberBandDiv, LightSpeedDiv } from './Animations';
 
 export function NavbarAnimation(props) {
   return (
@@ -39,9 +39,9 @@ export function NavbarDeleteName(props) {
 
     <nav className='navbar nav-bg'>
       <div className='container-fluid'>
-        <Hinge>
+        <LightSpeedDiv>
           <h1 className='name-font'>Kaileb Hammontree</h1>
-        </Hinge>
+        </LightSpeedDiv>
         <a className='nav-font' href="#">{props.about}</a>
         <a className='nav-font' href="#">{props.portfolio}</a>
         <a className='nav-font' href="#">{props.contact}</a>

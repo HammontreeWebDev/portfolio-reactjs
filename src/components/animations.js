@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { bounceInLeft, pulse, rubberBand, rollIn, hinge } from 'react-animations';
+import { bounceInLeft, pulse, rubberBand, rollIn, hinge, lightSpeedOut } from 'react-animations';
 
 // ----- Bouncing Animation ------ //
 const bounceAnimation = keyframes`${bounceInLeft}`;
@@ -29,5 +29,11 @@ animation: 2.5s ${rollInAnimation}
 // ----- hinge Animation ------ //
 const hingeAnimation = keyframes`${hinge}`;
 export const Hinge = styled.div`
-animation: 3s ${hingeAnimation}
+animation: 2.5s ${hingeAnimation}
+`;
+
+// ----- flash Animation ------ //
+const lightSpeedAnimation = keyframes`${lightSpeedOut}`;
+export const LightSpeedDiv = styled.div`
+animation: 2.5s ${lightSpeedAnimation}
 `;
