@@ -8,4 +8,4 @@ ReactDOM.render(<Init />, document.getElementById('root'));
 setTimeout(() => {
     console.log('This message shows after 3 seconds on page load');
     ReactDOM.render(<DeleteName />, document.getElementById('root'));
-}, 2500)
+}, 2300)
