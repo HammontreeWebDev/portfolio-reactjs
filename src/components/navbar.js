@@ -9,7 +9,7 @@ export function NavbarAnimation(props) {
         <div className='container-fluid'>
 
           <PulsingDiv>
-              <h1 className='name-font'>Kaileb Hammontree</h1>
+            <h1 className='name-font'>Kaileb Hammontree</h1>
           </PulsingDiv>
 
           <RubberBandDiv>
@@ -34,3 +34,20 @@ export function NavbarAnimation(props) {
   );
 }
 
+export function NavbarReplace(props) {
+  return (
+
+    <nav className='navbar nav-bg'>
+      <div className='container-fluid'>
+        <Hinge>
+          <h1 className='name-font'>Kaileb Hammontree</h1>
+        </Hinge>
+        <a className='nav-font' href="#">{props.about}</a>
+        <a className='nav-font' href="#">{props.portfolio}</a>
+        <a className='nav-font' href="#">{props.contact}</a>
+        <a className='nav-font' href="#">{props.resume}</a>
+      </div>
+    </nav>
+
+  );
+}
