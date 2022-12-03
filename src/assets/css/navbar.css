@@ -1,23 +1,16 @@
-:root {
-    /* color scheme: */
-    --light-blue: #C9EAFF;
-    --light-pink: #FFE3E3;
-    --matte-blue: #7B9DB3;
+/* Navbar component is included in App.js, therefore, we have access to the style.css variables */
 
-    /* shades of --light-blue (darker with increasing number): */
-    --shade1: #B5D3E6;
-    --shade2: #97B0BF;
-    --shade3: #657580;
-    --shade4: #323B40;
-
-    /* transparent alternatives to existing color scheme: */
-    --trans-shade2: rgba(151, 176, 191, .75);
-
-    /* Google fonts: */
-    --rubik: "'Rubik', sans-serif";
-    --dirt: "'Rubik Dirt', cursive";
-    --distressed: "'Rubik Distressed', cursive";
-}
 .nav-bg {
 background-color: var(--trans-shade2);
+}
+.name-font {
+    font-family: var(--dirt);
+    color: var(--shade4);
+    font-size: 400%;
+}
+.nav-font{
+    text-decoration: none;
+    font-family: var(--rubik);
+    color: var(--light-pink);
+    font-size: 150%;
 }

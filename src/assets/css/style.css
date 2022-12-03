@@ -10,11 +10,13 @@
     --shade3: #657580;
     --shade4: #323B40;
 
-    /* Google fonts: */
-    --rubik: "'Rubik', sans-serif";
-    --dirt: "'Rubik Dirt', cursive";
-    --distressed: "'Rubik Distressed', cursive";
+    /* transparent alternatives to existing color scheme: */
+    --trans-shade2: rgba(151, 176, 191, .85);
 
+    /* Google fonts: */
+    --rubik: 'Rubik', sans-serif;
+    --dirt: 'Rubik Dirt', cursive;
+    --distressed: 'Rubik Distressed', cursive;
 }
 
 body {
