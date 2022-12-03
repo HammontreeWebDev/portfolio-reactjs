@@ -1,0 +1,7 @@
+body {
+    /* set background image for entire body */
+    /* This picture was taken on a family trip in TN! */
+    background-image: url("../img/wooden-balcony.jpg");
+    background-size: cover;
+    background-repeat:repeat-y;
+}
