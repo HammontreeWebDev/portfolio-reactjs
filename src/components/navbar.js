@@ -3,8 +3,9 @@ import '../assets/css/navbar.css';
 
 function Navbar(props) {
   return (
-      <nav className='navbar navbar-dark bg-dark custom-bg'>
+      <nav className='navbar custom-bg'>
         <div className='container-fluid'>
+          <h1>Kaileb Hammontree</h1>
           <a className='navbar-brand' href="#">{props.about}</a>
           <a className='navbar-brand' href="#">{props.portfolio}</a>
           <a className='navbar-brand' href="#">{props.contact}</a>
