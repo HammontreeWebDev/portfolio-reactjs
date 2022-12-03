@@ -11,7 +11,7 @@
     --shade4: #323B40;
 
     /* transparent alternatives to existing color scheme: */
-    --trans-shade2: rgba(151, 176, 191, .85);
+    --trans-shade2: rgba(151, 176, 191, .9);
 
     /* Google fonts: */
     --rubik: 'Rubik', sans-serif;
