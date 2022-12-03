@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/css/navbar.css';
 import { BouncyDiv, PulsingDiv, RubberBandDiv, Hinge } from './Animations';
 
-function Navbar(props) {
+export function NavbarAnimation(props) {
   return (
     <BouncyDiv>
       <nav className='navbar nav-bg'>
@@ -34,4 +34,3 @@ function Navbar(props) {
   );
 }
 
-export default Navbar;

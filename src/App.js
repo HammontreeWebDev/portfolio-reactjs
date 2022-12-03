@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Welcome from "./components/Welcome";
+import { NavbarAnimation } from "./components/Navbar";
+import { WelcomeAnimation } from "./components/Welcome";
 
 // general css for the page
 import './assets/css/style.css';
@@ -11,14 +11,12 @@ const portfolioNav = 'Portfolio';
 const contactNav = 'Contact';
 const resumeNav = 'Resume';
 
-// call components to be rendered
-function App() {
+// init function to get homepage rendered with animations
+export function Init() {
   return (
     <>
-      <Navbar about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav} />
-      <Welcome />
+      <NavbarAnimation about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav} />
+      <WelcomeAnimation />
     </>
   );
 };
-
-export default App;

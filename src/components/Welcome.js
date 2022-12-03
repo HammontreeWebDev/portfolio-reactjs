@@ -3,7 +3,7 @@ import '../assets/css/welcome.css';
 import transNameLogo from '../assets/img/transparent-name-logo.png';
 import { RollInDiv, BouncyDiv } from './Animations';
 
-function Welcome() {
+export function WelcomeAnimation() {
 
     return (
 
@@ -18,5 +18,3 @@ function Welcome() {
     );
 
 }
-
-export default Welcome;

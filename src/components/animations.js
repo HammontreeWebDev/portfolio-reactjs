@@ -23,11 +23,11 @@ animation: 1.75s ${rubberBandAnimation}
 // ----- RollIn Animation ------ //
 const rollInAnimation = keyframes`${rollIn}`;
 export const RollInDiv = styled.div`
-animation: 5s ${rollInAnimation}
+animation: 2.5s ${rollInAnimation}
 `;
 
 // ----- hinge Animation ------ //
 const hingeAnimation = keyframes`${hinge}`;
 export const Hinge = styled.div`
-animation: 8s ${hingeAnimation}
+animation: 3s ${hingeAnimation}
 `;
