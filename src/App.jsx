@@ -5,6 +5,8 @@ import AboutMe from "./components/AboutMe";
 import Project from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import mtgApp from "./assets/img/mtgpp.png"
+import pokeApp from "./assets/img/pokewire.png"
 
 
 // declare any variables
@@ -73,9 +75,21 @@ export function App() {
     <>
       <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
 
+      {/* conditionally render aboutme section if button is clicked */}
       {showAbout ? <AboutMe /> : null}
-      {showPortfolio ? <Project /> : null}
+
+      {/* show several Project components based on finished projects we have to display */}
+      { showPortfolio ? 
+      <main className='portfolio-body'>
+      <Project src={mtgApp} alt={'screenshot of MGT++ deck building application'} caption={'Hello World'}/>
+      <Project src={pokeApp} alt={'screenshot of MGT++ deck building application'} caption={'Hello World'}/>
+      </main> 
+      : null }
+
+      {/* conditionally render contact section if button is clicked */}
       {showContact ? <Contact /> : null}
+
+      {/* conditionally render resume section if button is clicked */}
       {showResume ? <Resume /> : null}
     </>
   )

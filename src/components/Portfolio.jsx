@@ -1,11 +1,11 @@
 import React from 'react';
 import { RollInDiv } from './Animations';
 
-function Project() {
+function Project(props) {
     return (
         <RollInDiv className='figure'>
-            <img src="..." className="figure-img img-fluid rounded" alt="..." />
-                <figcaption className="figure-caption text-end">A caption for the above image.</figcaption>
+            <img src={props.src} className="figure-img img-fluid rounded" alt={props.alt} />
+                <figcaption className="figure-caption text-end">{props.caption}</figcaption>
         </RollInDiv>
     )
 }
