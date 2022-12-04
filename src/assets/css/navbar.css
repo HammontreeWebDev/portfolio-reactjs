@@ -21,6 +21,10 @@
     font-size: 150%;
 }
 
+.nav-font:hover {
+    color: var(--light-pink);
+}
+
 .nav-img {
     max-width: 25vw;
 }
