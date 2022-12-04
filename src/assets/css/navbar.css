@@ -1,5 +1,4 @@
 /* Navbar component is included in App.js, therefore, we have access to the style.css variables */
-
 .custom-nav {
     display: flex;
     justify-content: space-around;

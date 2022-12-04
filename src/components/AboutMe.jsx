@@ -1,10 +1,11 @@
 import React from 'react';
 import '../assets/css/aboutme.css';
+import { FlipInXMain } from './Animations'
 
 function AboutMe() {
 
     return (
-        <main className='about-me-body'>
+        <FlipInXMain className='about-me-body'>
             <section className=' custom-card'>
                 <h2 className='custom-card-header'>
                     About Me
@@ -20,7 +21,7 @@ function AboutMe() {
                     </p>
                 </div>
             </section>
-        </main>
+        </FlipInXMain>
     )
 }
 

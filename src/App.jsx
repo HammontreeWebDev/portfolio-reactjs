@@ -6,11 +6,14 @@ import Project from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
+
 // declare any variables
 let aboutNav = 'About Me';
 let portfolioNav = 'Portfolio';
 let contactNav = 'Contact';
 let resumeNav = 'Resume';
+
+const customNav = document.querySelector('.custom-nav');
 
 // Render welcome animation as page initializes
 export function Init() {
@@ -61,10 +64,10 @@ export function App() {
     setShowResume(true);
   };
 
-  showAbout ? aboutNav = null : aboutNav = 'About Me';
-  showPortfolio ? portfolioNav = null : portfolioNav = 'Portfolio';
-  showContact ? contactNav = null : contactNav = 'Contact';
-  showResume ? resumeNav = null : resumeNav = 'Resume';
+  // showAbout ? aboutNav = null : aboutNav = 'About Me';
+  // showPortfolio ? portfolioNav = null : portfolioNav = 'Portfolio';
+  // showContact ? contactNav = null : contactNav = 'Contact';
+  // showResume ? resumeNav = null : resumeNav = 'Resume';
 
   return (
     <>
