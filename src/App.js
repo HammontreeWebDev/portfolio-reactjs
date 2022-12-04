@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarAnimation, NavbarDeleteName, MainNavbar } from "./components/Navbar";
+import { NavBar } from "./components/Navbar";
 import { WelcomeAnimation, DeleteWelcome } from "./components/Welcome";
 
 // general css for the page
@@ -11,23 +11,17 @@ const portfolioNav = 'Portfolio';
 const contactNav = 'Contact';
 const resumeNav = 'Resume';
 
-// component init function to get homepage rendered with initial animations
+// Render welcome animation as page initializes
 export function Init() {
   return (
-    <>
-      <NavbarAnimation about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav} />
       <WelcomeAnimation />
-    </>
   );
 };
 
-// component function to delete name in navbar and logo/name in body
+// transition out welcome animation
 export function DeleteName() {
   return (
-    <>
-    <NavbarDeleteName about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>
-    <DeleteWelcome/>
-    </>
+    <DeleteWelcome />
   )
 }
 
@@ -35,7 +29,7 @@ export function DeleteName() {
 export function LandingPage() {
   return (
     <>
-    <MainNavbar about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>
+    <NavBar about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>
     </>
   )
 }

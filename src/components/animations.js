@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { bounceInLeft, pulse, rubberBand, rollIn, hinge, lightSpeedOut } from 'react-animations';
+import { bounceInLeft, pulse, rubberBand, rollIn, hinge, lightSpeedOut, fadeOut, bounceInDown, tada } from 'react-animations';
 
 // ----- Bouncing Animation ------ //
 const bounceAnimation = keyframes`${bounceInLeft}`;
@@ -37,3 +37,22 @@ const lightSpeedAnimation = keyframes`${lightSpeedOut}`;
 export const LightSpeedDiv = styled.div`
 animation: 2.5s ${lightSpeedAnimation}
 `;
+
+// ----- fadeOut Animation ------ //
+const fadeOutAnimation = keyframes`${fadeOut}`;
+export const FadeOutDiv = styled.div`
+animation: 2.5s ${fadeOutAnimation}
+`;
+
+// ----- fadeOut Animation ------ //
+const bounceInDownAnimation = keyframes`${bounceInDown}`;
+export const BounceInDownDiv = styled.div`
+animation: 1s ${bounceInDownAnimation}
+`;
+
+// ----- tada Animation ------ //
+const tadaAnimation = keyframes`${tada}`;
+export const TadaDiv = styled.div`
+animation: 3s ${tadaAnimation}
+`;
+
