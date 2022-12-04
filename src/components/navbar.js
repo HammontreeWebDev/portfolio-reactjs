@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/navbar.css';
 import { BounceInDownDiv } from './Animations';
 import navNameLogo from '../assets/img/transparent-name-logo.png';
+import 'hover.css';
 
 export function NavBar(props) {
   return (
@@ -9,7 +10,7 @@ export function NavBar(props) {
       <nav className='navbar main-nav-bg'>
         <div className='container-fluid'>
           <img className='nav-img' src={navNameLogo} alt='image/logo of laptop with Kaileb Hammontree Full-Stack Web Development printed underneath' />
-          <a className='nav-font' href="#">{props.about}</a>
+          <a className='nav-font hvr-grow' href="#">{props.about}</a>
           <a className='nav-font' href="#">{props.portfolio}</a>
           <a className='nav-font' href="#">{props.contact}</a>
           <a className='nav-font' href="#">{props.resume}</a>
