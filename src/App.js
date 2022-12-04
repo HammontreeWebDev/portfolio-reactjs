@@ -25,8 +25,9 @@ export function DeleteName() {
   )
 }
 
-// function to render final landing page
+// function to render final landing page where we will show and hide components based on user input
 export function LandingPage() {
+  
   return (
     <>
     <NavBar about={aboutNav} portfolio={portfolioNav} contact={contactNav} resume={resumeNav}/>

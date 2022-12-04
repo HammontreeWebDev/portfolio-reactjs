@@ -14,7 +14,7 @@ export const PulsingDiv = styled.div`
 animation: 1.75s ${pulseAnimation}
 `;
 
-// ----- Pulsing Animation ------ //
+// ----- Rubber Band Animation ------ //
 const rubberBandAnimation = keyframes`${rubberBand}`;
 export const RubberBandDiv = styled.div`
 animation: 1.75s ${rubberBandAnimation}
@@ -32,7 +32,7 @@ export const Hinge = styled.div`
 animation: 2.5s ${hingeAnimation}
 `;
 
-// ----- flash Animation ------ //
+// ----- light speed Animation ------ //
 const lightSpeedAnimation = keyframes`${lightSpeedOut}`;
 export const LightSpeedDiv = styled.div`
 animation: 2.5s ${lightSpeedAnimation}
@@ -44,7 +44,7 @@ export const FadeOutDiv = styled.div`
 animation: 2.5s ${fadeOutAnimation}
 `;
 
-// ----- fadeOut Animation ------ //
+// ----- bounce in down Animation ------ //
 const bounceInDownAnimation = keyframes`${bounceInDown}`;
 export const BounceInDownDiv = styled.div`
 animation: 1s ${bounceInDownAnimation}

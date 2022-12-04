@@ -23,6 +23,7 @@
 
 .nav-font:hover {
     color: var(--light-pink);
+    cursor: pointer;
 }
 
 .nav-img {
