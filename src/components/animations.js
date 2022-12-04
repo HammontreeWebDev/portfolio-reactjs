@@ -1,4 +1,4 @@
-import React from 'react';
+// import npm pkg for styled components to use for transition and non hover effects
 import styled, { keyframes } from 'styled-components';
 import { bounceInLeft, pulse, rubberBand, rollIn, hinge, lightSpeedOut, fadeOut, bounceInDown, tada } from 'react-animations';
 
@@ -46,7 +46,7 @@ animation: 2.5s ${fadeOutAnimation}
 
 // ----- bounce in down Animation ------ //
 const bounceInDownAnimation = keyframes`${bounceInDown}`;
-export const BounceInDownDiv = styled.div`
+export const BounceInDownHeader = styled.header`
 animation: 1s ${bounceInDownAnimation}
 `;
 
