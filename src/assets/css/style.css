@@ -1,4 +1,7 @@
 :root {
+
+    /* I used an online color picker to grab the color of the sky and then adobe color wheel to come up with a shades color pallete based off the sky color as well as a few complementary colors! */
+    
     /* color scheme: */
     --light-blue: #C9EAFF;
     --light-pink: #FFE3E3;
@@ -21,7 +24,7 @@
 }
 
 body {
-    /* set background image for entire body */
+    /* set background image for entire body that will be there regardless of what component is shown */
     /* This picture was taken on a family trip in TN! */
     background-image: url("../img/wooden-balcony.jpg");
     background-size: cover;
