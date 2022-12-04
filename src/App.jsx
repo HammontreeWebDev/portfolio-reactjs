@@ -15,7 +15,7 @@ let resumeNav = 'Resume';
 // Render welcome animation as page initializes
 export function Init() {
   return (
-      <WelcomeAnimation />
+    <WelcomeAnimation />
   );
 };
 
@@ -36,7 +36,7 @@ export function App() {
     setShowContact(isFalse);
     setShowResume(isFalse);
   }
-  
+
   const [showAbout, setShowAbout] = useState(false);
   const aboutClick = () => {
     setAll(false);
@@ -61,19 +61,19 @@ export function App() {
     setShowResume(true);
   };
 
-  showAbout ?  aboutNav = null : aboutNav = 'About Me';
-  showPortfolio ?  portfolioNav = null : portfolioNav = 'Portfolio';
-  showContact ?  contactNav = null : contactNav = 'Contact';
-  showResume ?  resumeNav = null : resumeNav = 'Resume';
+  showAbout ? aboutNav = null : aboutNav = 'About Me';
+  showPortfolio ? portfolioNav = null : portfolioNav = 'Portfolio';
+  showContact ? contactNav = null : contactNav = 'Contact';
+  showResume ? resumeNav = null : resumeNav = 'Resume';
 
   return (
     <>
-    <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick}/>
+      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
 
-    {showAbout ? <AboutMe /> : null}
-    {showPortfolio ? <Project /> : null}
-    {showContact ? <Contact /> : null}
-    {showResume ? <Resume /> : null}
+      {showAbout ? <AboutMe /> : null}
+      {showPortfolio ? <Project /> : null}
+      {showContact ? <Contact /> : null}
+      {showResume ? <Resume /> : null}
     </>
   )
 };

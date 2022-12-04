@@ -20,13 +20,13 @@ export function WelcomeAnimation() {
 }
 
 export function DeleteWelcome() {
-    return(
+    return (
         <FadeOutDiv>
             <main className='homepage-main'>
                 <LightSpeedDiv>
                     <img className='homepage-img' src={transNameLogo} alt='image/logo of laptop with Kaileb Hammontree Full-Stack Web Development printed underneath' />
-                    </LightSpeedDiv>
+                </LightSpeedDiv>
             </main>
-            </FadeOutDiv>
+        </FadeOutDiv>
     )
 }
