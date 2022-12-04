@@ -6,14 +6,11 @@ import Project from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
-// general css for the page
-import './assets/css/style.css';
-
 // declare any variables
-const aboutNav = 'About Me';
-const portfolioNav = 'Portfolio';
-const contactNav = 'Contact';
-const resumeNav = 'Resume';
+let aboutNav = 'About Me';
+let portfolioNav = 'Portfolio';
+let contactNav = 'Contact';
+let resumeNav = 'Resume';
 
 // Render welcome animation as page initializes
 export function Init() {
@@ -23,14 +20,14 @@ export function Init() {
 };
 
 // transition out welcome animation
-export function DeleteName() {
+export function WelcomeTransition() {
   return (
     <DeleteWelcome />
   )
 }
 
-// function to render final landing page where we will show and hide components based on user input
-export function LandingPage() {
+// function to render App after intro animations
+export function App() {
 
   // reusable to set all states to false in order to show only the content we want to
   const setAll = (isFalse) => {
@@ -64,6 +61,11 @@ export function LandingPage() {
     setShowResume(true);
   };
 
+  showAbout ?  aboutNav = null : aboutNav = 'About Me';
+  showPortfolio ?  portfolioNav = null : portfolioNav = 'Portfolio';
+  showContact ?  contactNav = null : contactNav = 'Contact';
+  showResume ?  resumeNav = null : resumeNav = 'Resume';
+
   return (
     <>
     <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick}/>
@@ -74,4 +76,4 @@ export function LandingPage() {
     {showResume ? <Resume /> : null}
     </>
   )
-}
+};
