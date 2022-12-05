@@ -38,3 +38,14 @@
 .card-text {
     color: var(--shade1);
 }
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 15%;
+    border-radius: 100%;
+    margin-right: 1%;
+}

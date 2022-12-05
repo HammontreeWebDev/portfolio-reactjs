@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/aboutme.css';
 import { FlipInXMain } from './Animations'
+import avatar from '../assets/img/avatar.JPG'
 
 function AboutMe() {
 
@@ -11,7 +12,10 @@ function AboutMe() {
                     About Me
                 </h2>
                 <div className='custom-card-body'>
+                    <div className='name-container'>
+                        <img className='avatar' src={avatar} alt='avatar of Kaileb Hammontree' />
                     <h5 className='card-title'>Kaileb Hammontree | Web Developer</h5>
+                    </div>
                     <p className='card-text'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Scelerisque purus semper eget duis at tellus. Luctus accumsan tortor posuere ac ut. Nunc sed augue lacus viverra vitae. Parturient montes nascetur ridiculus mus mauris. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Dolor magna eget est lorem ipsum dolor sit.
                         <br />
