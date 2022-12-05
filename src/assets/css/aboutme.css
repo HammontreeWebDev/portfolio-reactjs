@@ -49,3 +49,7 @@
     border-radius: 100%;
     margin-right: 1%;
 }
+
+.card-name {
+    color: var(--light-blue);
+}

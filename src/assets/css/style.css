@@ -32,3 +32,7 @@ body {
     /* fixed background for continuity */
     background-attachment: fixed;
 }
+
+.text-pink {
+    color: var(--light-pink);
+}
