@@ -5,9 +5,11 @@ import AboutMe from "./components/AboutMe";
 import Project from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import mtgApp from "./assets/img/mtgpp.png"
-import pokeApp from "./assets/img/pokewire.png"
+import mtgApp from "./assets/img/mtgpp.png";
+import pokeApp from "./assets/img/pokewire.png";
 
+// since we are rendering the main tag around the portfolio components, we import portfolio css here:
+import './assets/css/portfolio.css';
 
 // declare any variables
 let aboutNav = 'About Me';
@@ -81,8 +83,8 @@ export function App() {
       {/* show several Project components based on finished projects we have to display */}
       { showPortfolio ? 
       <main className='portfolio-body'>
-      <Project src={mtgApp} alt={'screenshot of MGT++ deck building application'} caption={'Hello World'}/>
-      <Project src={pokeApp} alt={'screenshot of MGT++ deck building application'} caption={'Hello World'}/>
+      <Project src={mtgApp} href={'https://peaceful-escarpment-11973.herokuapp.com/'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | MySQL | jQuery | Handlebars | Bootstrap | CSS'}/>
+      <Project src={pokeApp} href={'https://luckysal.github.io/pokewire/index.html'} alt={'screenshot of PokéWire application'} appTitle={'PokéWire'} content={'HTML5 | jQuery | Bulma | CSS | API'}/>
       </main> 
       : null }
 

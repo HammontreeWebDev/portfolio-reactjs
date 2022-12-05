@@ -1,0 +1,52 @@
+.portfolio-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.custom-figure {
+    margin-top: 4%;
+    display: flex;
+    width: 45%;
+    border:  2px solid var(--light-pink);
+    border-radius: 5px;
+    position: relative;
+}
+
+.custom-figure-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.custom-figure-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.custom-figure-content:hover {
+    cursor: pointer;
+    color: var(--shade4);
+    background-color: var(--trans-shade2);
+
+}
+
+.project-title {
+    font-family: var(--distressed);
+}
+
+.project-content {
+    font-family: var(--rubik);
+}
+
+/* target the span element's text color in the project component */
+.custom-figure-content:hover .alt-color {
+    color: var(--light-pink);
+}

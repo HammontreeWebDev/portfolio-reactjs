@@ -1,12 +1,15 @@
 import React from 'react';
-import { RollInDiv } from './Animations';
+import { ZoomInRightATag } from './Animations';
 
 function Project(props) {
     return (
-        <RollInDiv className='figure'>
-            <img src={props.src} className="figure-img img-fluid rounded" alt={props.alt} />
-                <figcaption className="figure-caption text-end">{props.caption}</figcaption>
-        </RollInDiv>
+        <ZoomInRightATag className='custom-figure' href={props.href}>
+            <img src={props.src} className="custom-figure-img" alt={props.alt} />
+            <div className='custom-figure-content'>
+                <h1 className='project-title'>{props.appTitle}</h1>
+                <p className='project-content'> <strong>Built With: </strong><span className='alt-color'>{props.content}</span></p>
+            </div>
+        </ZoomInRightATag>
     )
 }
 

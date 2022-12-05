@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/welcome.css';
 import transNameLogo from '../assets/img/transparent-name-logo.png';
-import { RollInDiv, BouncyDiv, LightSpeedDiv, FadeOutDiv } from './Animations';
+import { BouncyDiv, LightSpeedDiv, FadeOutDiv, WobbleDiv } from './Animations';
 
 export function WelcomeAnimation() {
 
@@ -9,9 +9,9 @@ export function WelcomeAnimation() {
 
         <BouncyDiv>
             <main className='homepage-main'>
-                <RollInDiv>
+                <WobbleDiv>
                     <img className='homepage-img' src={transNameLogo} alt='image/logo of laptop with Kaileb Hammontree Full-Stack Web Development printed underneath' />
-                </RollInDiv>
+                </WobbleDiv>
             </main>
         </BouncyDiv>
 
