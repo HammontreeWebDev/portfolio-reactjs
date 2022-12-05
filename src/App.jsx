@@ -83,7 +83,7 @@ export function App() {
       {/* show several Project components based on finished projects we have to display */}
       { showPortfolio ? 
       <main className='portfolio-body'>
-      <Project src={mtgApp} href={'https://peaceful-escarpment-11973.herokuapp.com/'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | MySQL | jQuery | Handlebars | Bootstrap | CSS'}/>
+      <Project src={mtgApp} href={'https://peaceful-escarpment-11973.herokuapp.com/'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | Express.js | MySQL | jQuery | Handlebars | Bootstrap | CSS'}/>
       <Project src={pokeApp} href={'https://luckysal.github.io/pokewire/index.html'} alt={'screenshot of PokéWire application'} appTitle={'PokéWire'} content={'HTML5 | jQuery | Bulma | CSS | API'}/>
       </main> 
       : null }
