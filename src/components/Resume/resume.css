@@ -5,10 +5,36 @@
 .skill-item {
     list-style: none;
     color: var(--light-pink);
-    margin-right: 1%;
+    margin: 1%;
 }
 
 .skill-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-top: 3px solid var(--shade3);
+}
+
+.resume-card-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--light-blue);
+    color: var(--shade4);
+    margin-bottom: 0;
+    padding: 1%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.resume-body {
+    text-align: center;
+}
+
+@media screen and (max-width: 885px) {
+    .skill-container {
+        justify-content: space-between;
+    }
 }
