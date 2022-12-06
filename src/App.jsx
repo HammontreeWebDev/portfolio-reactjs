@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { NavBar } from "./components/Navbar";
-import { WelcomeAnimation, DeleteWelcome } from "./components/Welcome";
-import AboutMe from "./components/AboutMe";
-import Project from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import { NavBar } from "./components/Navbar/Navbar";
+import { WelcomeAnimation, DeleteWelcome } from "./components/Welcome/Welcome";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Project from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
+import Resume from "./components/Resume/Resume";
 import mtgApp from "./assets/img/mtgpp.png";
 import pokeApp from "./assets/img/pokewire.png";
 
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
-import './assets/css/portfolio.css';
+import './components/Portfolio/portfolio.css';
 
 // declare any variables
 let aboutNav = 'About Me';

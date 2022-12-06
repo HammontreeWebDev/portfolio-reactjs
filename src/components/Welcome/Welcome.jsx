@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/css/welcome.css';
-import transNameLogo from '../assets/img/transparent-name-logo.png';
-import { BouncyDiv, LightSpeedDiv, FadeOutDiv, WobbleDiv } from './Animations';
+import './welcome.css';
+import transNameLogo from '../../assets/img/transparent-name-logo.png';
+import { BouncyDiv, LightSpeedDiv, FadeOutDiv, WobbleDiv } from '../../utils/Animations';
 
 export function WelcomeAnimation() {
 

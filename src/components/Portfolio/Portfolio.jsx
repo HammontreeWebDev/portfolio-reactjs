@@ -1,5 +1,6 @@
 import React from 'react';
-import { ZoomInRightATag } from './Animations';
+import { ZoomInRightATag } from '../../utils/Animations';
+import './portfolio.css';
 
 function Project(props) {
     return (

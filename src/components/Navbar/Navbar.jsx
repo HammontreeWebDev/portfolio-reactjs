@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/css/navbar.css';
-import { BounceInDownHeader } from './Animations';
-import navNameLogo from '../assets/img/transparent-name-logo.png';
+import './navbar.css';
+import { BounceInDownHeader } from '../../utils/Animations';
+import navNameLogo from '../../assets/img/transparent-name-logo.png';
 import 'hover.css';
 
 export function NavBar(props) {

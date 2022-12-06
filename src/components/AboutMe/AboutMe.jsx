@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/css/aboutme.css';
-import { FlipInXMain } from './Animations'
-import avatar from '../assets/img/avatar.JPG'
+import './aboutme.css';
+import { FlipInXMain } from '../../utils/Animations'
+import avatar from '../../assets/img/avatar.JPG'
 
 function AboutMe() {
 

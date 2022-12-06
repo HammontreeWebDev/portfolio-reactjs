@@ -1,6 +1,6 @@
 // import npm pkg for styled components to use for transition and non hover effects
 import styled, { keyframes } from 'styled-components';
-import { bounceInLeft, rollIn, lightSpeedOut, fadeOut, bounceInDown, flipInX, wobble, zoomInRight } from 'react-animations';
+import { bounceInLeft, rollIn, lightSpeedOut, fadeOut, bounceInDown, flipInX, wobble, zoomInRight, rotateInUpRight } from 'react-animations';
 
 // ----- Bouncing Animation ------ //
 const bounceAnimation = keyframes`${bounceInLeft}`;
@@ -48,4 +48,10 @@ animation: 1.5s ${wobbleAnimation}
 const zoomInRightAnimation = keyframes`${zoomInRight}`;
 export const ZoomInRightATag = styled.a`
 animation: 1.5s ${zoomInRightAnimation}
+`;
+
+// ----- rotateInUpRight Animation ------ //
+const rotateInUpRightAnimation = keyframes`${rotateInUpRight}`;
+export const RotateInUpRightMain = styled.main`
+animation: 1.5s ${rotateInUpRightAnimation}
 `;

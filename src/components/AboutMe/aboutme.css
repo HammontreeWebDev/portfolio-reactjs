@@ -3,12 +3,11 @@
     width: 70%;
     font-family: var(--rubik);
     border-radius: 1rem;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 2%;
 }
 
 .about-me-body {
-    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
