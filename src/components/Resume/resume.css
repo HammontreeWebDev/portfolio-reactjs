@@ -1,0 +1,14 @@
+.skill-title {
+    color: var(--shade1);
+}
+
+.skill-item {
+    list-style: none;
+    color: var(--light-pink);
+    margin-right: 1%;
+}
+
+.skill-container {
+    display: flex;
+    flex-flow: row wrap;
+}

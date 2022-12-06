@@ -20,7 +20,7 @@ function Contact() {
                     <label htmlFor='messageInput' className="form-label">Message:</label>
                     <textarea className="form-control" id="messageInput" rows="6"></textarea>
                 </div>
-                <button className='custom-btn' type='submit'>Submit</button>
+                <button className='custom-btn hvr-shrink' type='submit'>Submit</button>
                 </div>
             </section>
         </RotateInUpRightMain>
