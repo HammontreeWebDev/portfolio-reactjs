@@ -17,10 +17,22 @@ function AboutMe() {
                     <h5 className='card-title'><span className='card-name'>Kaileb Hammontree</span> | <span className='text-pink'>Web Developer</span></h5>
                     </div>
                     <p className='card-text'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Scelerisque purus semper eget duis at tellus. Luctus accumsan tortor posuere ac ut. Nunc sed augue lacus viverra vitae. Parturient montes nascetur ridiculus mus mauris. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Dolor magna eget est lorem ipsum dolor sit.
+                        First of all, I want to thank you for taking the time out of your day to visit my website. We live in a society where most people turn to technology to make their lives easier. Sitting behind every application, website, gadget, or tool there is someone who spent hours, days, months, or even years planning, developing, and debugging the very pieces of technology that we have all come to love and enjoy. My goal, as a Full-Stack Web Developer is to do that for you.
                         <br />
                         <br />
-                        Amet justo donec enim diam vulputate ut. Adipiscing bibendum est ultricies integer quis. Enim neque volutpat ac tincidunt. Sed pulvinar proin gravida hendrerit lectus. At varius vel pharetra vel turpis. At consectetur lorem donec massa sapien faucibus et. Quam vulputate dignissim suspendisse in est. Morbi quis commodo odio aenean sed adipiscing diam. Laoreet sit amet cursus sit amet dictum sit amet. Aenean et tortor at risus viverra adipiscing at in tellus. Scelerisque purus semper eget duis at. Et malesuada fames ac turpis egestas. Laoreet id donec ultrices tincidunt arcu. Ornare massa eget egestas purus viverra accumsan. Sodales neque sodales ut etiam sit. Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Viverra justo nec ultrices dui sapien eget mi proin. Scelerisque purus semper eget duis at. Consequat id porta nibh venenatis cras sed felis eget.
+                        My journey began in 2021 when I graduated from The University Of Central Florida's Cyber Defense Professional Certificate Program. We spent 10 months learning several things from Computer Networking / Network Security all the way to Ethical Hacking and Game Theory. While I did enjoy the education I had recieved, I realized that cyber security was not what I actually wanted to do. The course that we took in Python opened up my eyes to all the cool things that programming had to offer and so I began building silly text based games that only worked in the CLI and unashamedly began showing all my friends and family.
+                        <br />
+                        <br />
+                        Thankfully, I've come a long way from CLI text-based games and can now build Full-Stack Applications. In 2022, I decided to join the Full-Stack Web Development Bootcamp with UCF, so that I could gain the knowledge and skills necessary to fuel my creative nature. At this moment, we are in the final weeks of the bootcamp and I am expected to graduate Mid-December 2022. Every group project that I have been a part of, recieved high praise from my peers and instruction team. There is no doubt that my work ethic, practical experience, and knowledge will allow me to tackle any project that comes my way, including yours.
+                        <br />
+                        <br />
+                        Feel free to navigate to the portfolio tab and check out various projects that I have completed. Hover over the preview of the project for more details on the technology that was used to build it and click on the preview to be redirected to the application itself.
+                        <br />
+                        <br />
+                        Again, thank you for being here. I am looking forward to hearing from you!
+                        <br />
+                        <br />
+                        
 
                     </p>
                 </div>
