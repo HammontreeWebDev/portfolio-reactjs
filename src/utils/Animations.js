@@ -8,10 +8,16 @@ export const BouncyDiv = styled.div`
 animation: 1.5s ${bounceAnimation}
 `;
 
-// ----- RollIn Animation ------ //
+// ----- RollIn Animation  Div------ //
 const rollInAnimation = keyframes`${rollIn}`;
 export const RollInDiv = styled.div`
 animation: 2.5s ${rollInAnimation}
+`;
+
+// ----- RollIn Animation Section------ //
+const rollInAnimation2 = keyframes`${rollIn}`;
+export const RollInSection = styled.section`
+animation: 1.5s ${rollInAnimation2}
 `;
 
 // ----- light speed Animation ------ //

@@ -1,14 +1,15 @@
 import React from 'react';
 import './resume.css';
+import { RollInSection } from '../../utils/Animations'
 
 // we copied the about me card here, so it is inheriting some of the custom card classes from that css file
 function Resume() {
     return (
         <main className='about-me-body'>
-            <section className=' custom-card'>
+            <RollInSection className=' custom-card'>
                 <div className='resume-card-header'>
                     <h2> Resume </h2>
-                    <button>Download My Official Resume Here</button>
+                    <button className='resume-btn hvr-skew hvr-pulse-grow'>Download My Official Resume Here</button>
                 </div>
                 <div className='custom-card-body resume-body'>
                     <h5 className='skill-title'>Front-End Skills:</h5>
@@ -24,7 +25,7 @@ function Resume() {
                             <li>Local Storage/Session Storage</li>
                             <li>jQuery</li>
                             <li>API (JSON, AJAX, REST, Web, 3rd party)</li>
-                            <li>React.js</li>
+                            <li>ReactJS</li>
                             <li>Handlebars</li>
                         </div>
                     </ul >
@@ -40,7 +41,12 @@ function Resume() {
 
                         <div className='skill-item'>
                             <li>Server-Side API Development</li>
-                            <li>MERN Stack (in progress)</li>
+                            <li>MERN Stack</li>
+                            <li>GraphQL</li>
+                            <li>Apollo Server</li>
+                        </div>
+
+                        <div className='skill-item'>
                             <li>C# (in progress)</li>
                             <li>Python (advanced concepts in progress)</li>
                             <li>Java (in progress)</li>
@@ -84,7 +90,7 @@ function Resume() {
                     </ul >
 
                 </div>
-            </section>
+            </RollInSection>
         </main>
     )
 }

@@ -33,6 +33,19 @@
     text-align: center;
 }
 
+.resume-btn {
+    font-family: var(--distressed);
+    color: var(--shade4);
+    border: none;
+    background-color: transparent;
+
+}
+
+.resume-btn:hover {
+    color: var(--shade3);
+}
+
+/* media queries after this comment: */
 @media screen and (max-width: 885px) {
     .skill-container {
         justify-content: space-between;
