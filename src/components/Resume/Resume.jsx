@@ -21,6 +21,7 @@ function Resume() {
                             <li>JavaScript</li>
                             <li>CSS (Flexbox / Custom)</li>
                             <li>CSS Framework (Bulma, Bootstrap)</li>
+                            <li>Apollo Client</li>
                         </div>
 
                         <div className='skill-item'>
@@ -39,16 +40,12 @@ function Resume() {
                             <li>Node.js</li>
                             <li>Express.js (Insomnia)</li>
                             <li>MongoDB (Mongoose)</li>
+                            <li>Server-Side API Development</li>
                         </div>
 
                         <div className='skill-item'>
-                            <li>Server-Side API Development</li>
-                            <li>MERN Stack</li>
                             <li>GraphQL</li>
                             <li>Apollo Server</li>
-                        </div>
-
-                        <div className='skill-item'>
                             <li>C# (in progress)</li>
                             <li>Python (advanced concepts in progress)</li>
                             <li>Java (in progress)</li>
@@ -58,17 +55,17 @@ function Resume() {
                     <h5 className='skill-title'>General Skills & Technology:</h5>
                     <ul className='skill-container'>
                         <div className='skill-item'>
+                            <li>MERN Stack</li>
                             <li>Babeljs</li>
                             <li>Git (version control)</li>
                             <li>GitHub / GitHub Pages</li>
-                            <li>Heroku</li>
                         </div>
 
                         <div className='skill-item'>
+                            <li>Heroku</li>
                             <li>Progressive Web Applications</li>
                             <li>Algorithms</li>
                             <li>Agile Methodology</li>
-                            <li></li>
                         </div>
                     </ul >
 

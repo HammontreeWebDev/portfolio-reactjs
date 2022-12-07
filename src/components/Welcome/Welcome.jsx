@@ -24,7 +24,7 @@ export function DeleteWelcome() {
         <FadeOutDiv>
             <main className='homepage-main'>
                 <LightSpeedDiv>
-                    <img className='homepage-img' src={transNameLogo} alt='image/logo of laptop with Kaileb Hammontree Full-Stack Web Development printed underneath' />
+                    <img className='homepage-img' src={transNameLogo} alt='laptop with Kaileb Hammontree Full-Stack Web Development printed underneath' />
                 </LightSpeedDiv>
             </main>
         </FadeOutDiv>
