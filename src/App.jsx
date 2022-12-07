@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
 import mtgApp from "./assets/img/mtgpp.png";
 import pokeApp from "./assets/img/pokewire.png";
+import HomePage from './components/HomePage/HomePage';
 
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
@@ -16,8 +17,6 @@ let aboutNav = 'About Me';
 let portfolioNav = 'Portfolio';
 let contactNav = 'Contact';
 let resumeNav = 'Resume';
-
-const customNav = document.querySelector('.custom-nav');
 
 // Render welcome animation as page initializes
 export function Init() {
@@ -42,7 +41,10 @@ export function App() {
     setShowPortfolio(isFalse);
     setShowContact(isFalse);
     setShowResume(isFalse);
+    setShowHome(isFalse);
   }
+
+  const [showHome, setShowHome] = useState(true);
 
   const [showAbout, setShowAbout] = useState(false);
   const aboutClick = () => {
@@ -76,7 +78,9 @@ export function App() {
   return (
     <>
       <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
-
+      {/* Initially show the 'home page' */}
+      {showHome ? <HomePage /> : null}
+      
       {/* conditionally render aboutme section if button is clicked */}
       {showAbout ? <AboutMe /> : null}
 
