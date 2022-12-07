@@ -8,7 +8,7 @@
 .home-page-title {
     max-width: 80%;
     color: var(--shade2);
-    background-color: var(--trans-shade4);
+    background-color: var(--alt-trans-shade4);
     font-family: var(--rubik);
     font-size: 500%;
     font-weight: 900;

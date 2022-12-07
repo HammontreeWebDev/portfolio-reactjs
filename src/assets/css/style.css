@@ -16,6 +16,7 @@
     /* transparent alternatives to existing color scheme: */
     --trans-shade2: rgba(151, 176, 191, .9);
     --trans-shade4: rgba(50, 59, 64, .9);
+    --alt-trans-shade4: rgba(50, 59, 64, .5);
 
     /* Google fonts: */
     --rubik: 'Rubik', sans-serif;
