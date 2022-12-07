@@ -14,26 +14,41 @@ function Contact() {
     const serviceID = process.env.REACT_APP_SERVICE_ID;
     const templateID = process.env.REACT_APP_TEMPLATE_ID;
     const userID = process.env.REACT_APP_USER_ID;
-    
+
+    // when the form is submitted, send email to emailjs server so it can be forwarded to my email
     const handleOnSubmit = (e) => {
+
+        const nameInput = document.querySelector('#nameInput');
+        const emailInput = document.querySelector('#emailInput');
+        const messageInput = document.querySelector('#messageInput');
+
         e.preventDefault();
-        emailjs.sendForm(serviceID, templateID, e.target, userID)
-          .then((result) => {
-            console.log(result.text);
+        if (nameInput.value && emailInput.value && messageInput.value !== '') {
+            emailjs.sendForm(serviceID, templateID, e.target, userID)
+                .then((response) => {
+                    console.log(response.text);
+                    Swal.fire({
+                        icon: `success`,
+                        title: `Your Message Was Sent Successfully. Please Allow 24-72 Business Hours For Kaileb To Respond.`
+                    })
+                }, (error) => {
+                    Swal.fire({
+                        icon: `error`,
+                        title: `Uh Oh! There was an error processing your request`,
+                        text: 'I apologize, please send me an email directly at hammontreewebdevelopment@gmail.com',
+                    })
+                    console.log(error);
+                });
+            e.target.reset()
+        }
+        else {
             Swal.fire({
-              icon: `success`,
-              title: `Message Sent Successfully`
+                icon: `error`,
+                title: `Uh Oh! There was an error processing your request`,
+                text: 'Hello, please make sure that you have filled out all of the required fields before your request can be processed.',
             })
-          }, (error) => {
-            console.log(error.text);
-            Swal.fire({
-              icon: `error`,
-              title: `Ooops, something went wrong`,
-              text: error.text,
-            })
-          });
-        e.target.reset()
-      };
+        }
+    };
 
     return (
         <RotateInUpRightMain className='contact-main'>
