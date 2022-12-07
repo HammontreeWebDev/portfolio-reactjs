@@ -1,15 +1,17 @@
 import React from 'react';
 import './resume.css';
-import { RollInSection } from '../../utils/Animations'
+import { RollInSection } from '../../utils/Animations';
+import resume from './resume.pdf'
 
 // we copied the about me card here, so it is inheriting some of the custom card classes from that css file
 function Resume() {
+
     return (
         <main className='about-me-body'>
             <RollInSection className=' custom-card'>
                 <div className='resume-card-header'>
                     <h2> Resume </h2>
-                    <button className='resume-btn hvr-skew hvr-pulse-grow'>Download My Official Resume Here</button>
+                    <a className='resume-btn hvr-skew hvr-pulse-grow' href={resume} download='Kaileb_Hammontree_Resume' target='blank' >Download My Official Resume Here</a>
                 </div>
                 <div className='custom-card-body resume-body'>
                     <h5 className='skill-title'>Front-End Skills:</h5>
@@ -72,7 +74,7 @@ function Resume() {
 
                     <h5 className='skill-title'>Cyber Security Knowledge:</h5>
                     <ul className='skill-container'>
-                    <div className='skill-item'>
+                        <div className='skill-item'>
                             <li>Linux Security</li>
                             <li>Microsoft Security</li>
                             <li>Network Security</li>

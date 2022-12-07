@@ -21,6 +21,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--light-blue);
     color: var(--shade4);
     margin-bottom: 0;
@@ -35,14 +36,15 @@
 
 .resume-btn {
     font-family: var(--distressed);
+    font-size: 120%;
     color: var(--shade4);
-    border: none;
-    background-color: transparent;
+    text-decoration: none;
 
 }
 
 .resume-btn:hover {
     color: var(--shade3);
+    cursor: pointer;
 }
 
 /* media queries after this comment: */
