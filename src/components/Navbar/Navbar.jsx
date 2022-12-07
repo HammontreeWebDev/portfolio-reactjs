@@ -11,11 +11,11 @@ export function NavBar(props) {
     <BounceInDownHeader className='header-bg'>
       <img className='nav-img' src={navNameLogo} alt='laptop with Kaileb Hammontree Full-Stack Web Development printed underneath' />
       <nav className='container-fluid custom-nav'>
-        <a className='nav-font hvr-buzz' onClick={props.showAbout} >{props.about}</a>
+        <a className={'nav-font hvr-buzz'} onClick={props.showAbout} >{props.about}</a>
         <a className='nav-font hvr-buzz' onClick={props.showPortfolio} >{props.portfolio}</a>
         <a className='nav-font hvr-buzz' onClick={props.showContact} >{props.contact}</a>
         <a className='nav-font hvr-buzz' onClick={props.showResume} >{props.resume}</a>
       </nav>
     </BounceInDownHeader>
   );
-}
+};

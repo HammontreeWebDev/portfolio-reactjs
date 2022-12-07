@@ -36,7 +36,7 @@ export function WelcomeTransition() {
 export function App() {
 
   // reusable to set all states to false in order to show only the content we want to
-  const setAll = (isFalse) => {
+  const setAll = (isFalse, e) => {
     setShowAbout(isFalse);
     setShowPortfolio(isFalse);
     setShowContact(isFalse);
@@ -44,30 +44,51 @@ export function App() {
     setShowHome(isFalse);
   }
 
+  const hightlightNav = (e) => {
+    const navItem = document.getElementsByClassName('nav-font');
+
+    for (let i = 0; i < navItem.length; i++) {
+
+      navItem[i].style = `
+      text-shadow: none;
+      `;
+
+      if (e.target === navItem[i]) {
+      e.target.style = `
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--light-blue), 0 0 70px var(--light-blue), 0 0 80px var(--light-blue), 0 0 100px var(--light-blue), 0 0 150px var(--light-blue);
+      `;
+      }
+    }
+  }
+
   const [showHome, setShowHome] = useState(true);
 
   const [showAbout, setShowAbout] = useState(false);
-  const aboutClick = () => {
+  const aboutClick = (e) => {
     setAll(false);
     setShowAbout(true);
+    hightlightNav(e);
   };
 
   const [showPortfolio, setShowPortfolio] = useState(false);
-  const portfolioClick = () => {
+  const portfolioClick = (e) => {
     setAll(false);
     setShowPortfolio(true);
+    hightlightNav(e);
   };
 
   const [showContact, setShowContact] = useState(false);
-  const contactClick = () => {
+  const contactClick = (e) => {
     setAll(false);
     setShowContact(true);
+    hightlightNav(e);
   };
 
   const [showResume, setShowResume] = useState(false);
-  const resumeClick = () => {
+  const resumeClick = (e) => {
     setAll(false);
     setShowResume(true);
+    hightlightNav(e);
   };
 
   // showAbout ? aboutNav = null : aboutNav = 'About Me';
@@ -77,7 +98,7 @@ export function App() {
 
   return (
     <>
-      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
+      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick}/>
       {/* Initially show the 'home page' */}
       {showHome ? <HomePage /> : null}
       

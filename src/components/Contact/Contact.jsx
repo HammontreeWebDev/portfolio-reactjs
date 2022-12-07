@@ -114,7 +114,7 @@ function Contact() {
                 </form>
             </section>
         </RotateInUpRightMain>
-    )
-}
+    );
+};
 
 export default Contact;
