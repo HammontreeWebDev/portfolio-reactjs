@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
 import { RotateInUpRightMain } from '../../utils/Animations'
 import emailjs from '@emailjs/browser';
@@ -50,22 +50,65 @@ function Contact() {
         }
     };
 
+    // use state changes / ternarys / if statements to evaluate onChange / mouseLeave and e.target.values to determine whether the information the user has put in is acceptable, if it is no message is shown, if it is not then the user will recieve a warning message.
+    const [nameRequired, setNameRequired] = useState(false);
+    const [emailRequired, setEmailRequired] = useState(false);
+    const [checkEmail, setCheckEmail] = useState(false);
+    const [messageRequired, setMessageRequired] = useState(false);
+
+    const blankName = (e) => {
+        if (e.target.value === '') {
+        setNameRequired(true);
+        }
+    };
+    const blankEmail = (e) => {
+        if (e.target.value === '') {
+        setEmailRequired(true);
+        }
+    };
+    const blankMessage = (e) => {
+        if (e.target.value === '') {
+        setMessageRequired(true);
+        }
+    };
+    const validName = () => {
+        setNameRequired(false);
+    }
+    const validEmail = (e) => {
+        setEmailRequired(false);
+        if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(e.target.value)) {
+        setCheckEmail(false);
+        }
+        else {
+            setCheckEmail(true);
+        }
+    }
+    const validMessage = () => {
+        setMessageRequired(false);
+    }
+
+    const isNameRequired = nameRequired ? <span className='text-danger'> * required</span> : null;
+    const isEmailRequired = emailRequired ? <span className='text-danger'> * required</span> : null;
+    const isEmailValid = checkEmail ? <span className='text-danger'> * please enter a valid email address</span> : null;
+    const isMessageRequired = messageRequired ? <span className='text-danger'> * required</span> : null;
+
+
     return (
         <RotateInUpRightMain className='contact-main'>
             <section className='form-card'>
                 <h2 className='form-header'>Contact</h2>
                 <form className='form-card-body' onSubmit={handleOnSubmit}>
                     <div className="mb-3">
-                        <label htmlFor="nameInput" className="form-label">Name:</label>
-                        <input type="text" className="form-control" id="nameInput" name='from_name' placeholder="First Name Last Name" />
+                        <label htmlFor="nameInput" className="form-label">Name:{isNameRequired} </label>
+                        <input type="text" className="form-control" id="nameInput" name='from_name' placeholder="First Name Last Name" onMouseLeave={blankName} onChange={validName}/>
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="emailInput" className="form-label">Email address:</label>
-                        <input type="email" className="form-control" id="emailInput" name='from_email' placeholder="myemail@example.com" />
+                        <label htmlFor="emailInput" className="form-label">Email address:{isEmailRequired}{isEmailValid}</label>
+                        <input type="email" className="form-control" id="emailInput" name='from_email' placeholder="myemail@example.com" onMouseLeave={blankEmail} onChange={validEmail}/>
                     </div>
                     <div className="mb-3">
-                        <label htmlFor='messageInput' className="form-label">Message:</label>
-                        <textarea className="form-control" id="messageInput" rows="6" name='message'></textarea>
+                        <label htmlFor='messageInput' className="form-label">Message:{isMessageRequired}</label>
+                        <textarea className="form-control" id="messageInput" rows="6" name='message' onMouseLeave={blankMessage} onChange={validMessage}></textarea>
                     </div>
                     <button className='custom-btn hvr-shrink' type='submit'>Submit</button>
                 </form>
