@@ -26,3 +26,14 @@
     max-width: 25%;
 }
 
+/* media queries */
+
+/* ipad air */
+@media screen and (max-width: 820px) {
+   .nav-font {
+    font-size: 120%;
+   } 
+   .nav-img {
+    max-width: 35%;
+   }
+}

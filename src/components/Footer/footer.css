@@ -19,3 +19,13 @@ footer {
     cursor: pointer;
     color: var(--light-blue);
 }
+
+/* media queries */
+
+/* ipad air */
+@media screen and (max-width: 820px) {
+    
+    .icon {
+    font-size: 3.5rem;
+    }
+}

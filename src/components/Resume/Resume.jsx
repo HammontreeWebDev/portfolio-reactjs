@@ -2,6 +2,7 @@ import React from 'react';
 import './resume.css';
 import { RollInSection } from '../../utils/Animations';
 import resume from './resume.pdf'
+import { Icon } from '@iconify/react';
 
 // we copied the about me card here, so it is inheriting some of the custom card classes from that css file
 function Resume() {
@@ -11,7 +12,7 @@ function Resume() {
             <RollInSection className=' custom-card'>
                 <div className='resume-card-header'>
                     <h2> Resume </h2>
-                    <a className='resume-btn hvr-skew hvr-pulse-grow' href={resume} download='Kaileb_Hammontree_Resume' target='blank' >Download My Official Resume Here</a>
+                    <a className='resume-btn hvr-skew hvr-pulse-grow' href={resume} download='Kaileb_Hammontree_Resume' target='blank'><Icon icon='material-symbols:arrow-forward-rounded'/> <Icon icon='icon-park-solid:folder-download'/></a>
                 </div>
                 <div className='custom-card-body resume-body'>
                     <h5 className='skill-title'>Front-End Skills:</h5>
