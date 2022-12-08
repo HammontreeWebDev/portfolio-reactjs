@@ -8,6 +8,7 @@ import Resume from "./components/Resume/Resume";
 import mtgApp from "./assets/img/mtgpp.png";
 import pokeApp from "./assets/img/pokewire.png";
 import HomePage from './components/HomePage/HomePage';
+import Footer from './components/Footer/Footer';
 
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
@@ -118,6 +119,8 @@ export function App() {
 
       {/* conditionally render resume section if button is clicked */}
       {showResume ? <Resume /> : null}
+
+      <Footer />
     </>
   )
 };

@@ -4,10 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 .form-card {
-    margin-top: 4%;
-    /* padding: 1%; */
     width: 70%;
     background-color: var(--shade4);
     border-radius: 1rem;

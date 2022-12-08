@@ -2,12 +2,15 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
 }
 
 .custom-figure {
-    margin-top: 4%;
+    margin: 3%;
     display: flex;
-    width: 45%;
+    width: 800px;
+    height: 400px;
     border:  2px solid var(--light-pink);
     border-radius: 5px;
     position: relative;

@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--trans-shade4);
+}
+
+.icon {
+    font-size: 6.5rem;
+    padding: 1%;
+    color: var(--light-pink);
+}
