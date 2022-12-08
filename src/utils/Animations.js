@@ -52,7 +52,7 @@ animation: 1.5s ${wobbleAnimation}
 
 // ----- zoomInRight Animation ------ //
 const zoomInRightAnimation = keyframes`${zoomInRight}`;
-export const ZoomInRightATag = styled.a`
+export const ZoomInRightDiv = styled.div`
 animation: 1.5s ${zoomInRightAnimation}
 `;
 

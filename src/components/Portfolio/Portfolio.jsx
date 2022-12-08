@@ -1,16 +1,24 @@
 import React from 'react';
-import { ZoomInRightATag } from '../../utils/Animations';
+import { ZoomInRightDiv } from '../../utils/Animations';
 import './portfolio.css';
+import { Icon, enableCache } from '@iconify/react';
+
+// allow iconify icons to be stored locally for quicker rendering
+enableCache('local');
 
 function Project(props) {
     return (
-        <ZoomInRightATag className='custom-figure' href={props.href}>
+        <ZoomInRightDiv className='custom-figure'>
             <img src={props.src} className="custom-figure-img" alt={props.alt} />
             <div className='custom-figure-content'>
                 <h1 className='project-title'>{props.appTitle}</h1>
                 <p className='project-content'> <strong>Built With: </strong><span className='alt-color'>{props.content}</span></p>
+                <div className='project-icon-container'>
+                    <a className='project-links' href={props.repository}><Icon icon="uim:github-alt" /></a>
+                    <a className='project-links' href={props.deployment}><Icon icon="eos-icons:application-instance" /></a>
+                </div>
             </div>
-        </ZoomInRightATag>
+        </ZoomInRightDiv>
     )
 }
 

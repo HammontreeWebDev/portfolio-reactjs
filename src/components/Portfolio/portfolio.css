@@ -35,7 +35,6 @@
 }
 
 .custom-figure-content:hover {
-    cursor: pointer;
     color: var(--shade4);
     background-color: var(--trans-shade2);
 
@@ -51,5 +50,21 @@
 
 /* target the span element's text color in the project component */
 .custom-figure-content:hover .alt-color {
+    color: var(--light-pink);
+}
+
+.project-icon-container {
+    font-size: 4.5rem;
+}
+
+.project-icon-container a {
+margin-left: 5px;
+margin-right: 5px;
+/* unset the <a> tag link styling for the color so it will inherit the transparency until the entire div is shown on hover */
+color: unset;
+}
+
+.project-icon-container a:hover {
+    cursor: pointer;
     color: var(--light-pink);
 }
