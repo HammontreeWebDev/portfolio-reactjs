@@ -9,8 +9,8 @@
 .custom-figure {
     margin: 3%;
     display: flex;
-    width: 800px;
-    height: 400px;
+    width: 650px;
+    height: 325px;
     border: 2px solid var(--light-pink);
     border-radius: 5px;
     position: relative;
