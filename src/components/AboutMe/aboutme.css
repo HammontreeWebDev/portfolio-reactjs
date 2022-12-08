@@ -61,3 +61,27 @@
     }
 
 }
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (max-width: 412px) {
+    
+    .custom-card {
+        width: 100%;
+    }
+
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) {
+    .card-title {
+        font-size: 100%;
+    }
+
+    .custom-card-header {
+        font-size: 120%;
+    }
+
+    .card-text {
+        font-size: 90%;
+    }
+}

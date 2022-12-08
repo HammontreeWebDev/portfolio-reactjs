@@ -53,3 +53,22 @@
         justify-content: space-between;
     }
 }
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) {
+    .skill-title {
+        font-size: 100%;
+    }
+
+    .resume-card-header h2 {
+        font-size: 120%;
+    }
+
+    .skill-item {
+        font-size: 90%;
+    }
+
+    .resume-btn {
+        font-size: 120%;
+    }
+}

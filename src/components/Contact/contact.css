@@ -33,3 +33,30 @@
 label {
     color: var(--light-blue);
 }
+
+/* media queries */
+
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+    
+    .form-card {
+        width: 85%;
+    }
+
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (max-width: 412px) {
+    
+    .form-card {
+        width: 95%;
+    }
+
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) {
+    .form-header {
+        font-size: 120%;
+    }
+}
