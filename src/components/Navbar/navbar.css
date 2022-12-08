@@ -37,3 +37,14 @@
     max-width: 35%;
    }
 }
+
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+    .header-bg {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .nav-img {
+        max-width: 50%;
+    }
+}

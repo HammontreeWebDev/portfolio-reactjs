@@ -11,7 +11,7 @@
     display: flex;
     width: 800px;
     height: 400px;
-    border:  2px solid var(--light-pink);
+    border: 2px solid var(--light-pink);
     border-radius: 5px;
     position: relative;
 }
@@ -46,6 +46,7 @@
 
 .project-content {
     font-family: var(--rubik);
+    text-align: center;
 }
 
 /* target the span element's text color in the project component */
@@ -58,13 +59,33 @@
 }
 
 .project-icon-container a {
-margin-left: 5px;
-margin-right: 5px;
-/* unset the <a> tag link styling for the color so it will inherit the transparency until the entire div is shown on hover */
-color: unset;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* unset the <a> tag link styling for the color so it will inherit the transparency until the entire div is shown on hover */
+    color: unset;
 }
 
 .project-icon-container a:hover {
     cursor: pointer;
     color: var(--light-pink);
+}
+
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+
+    .custom-figure {
+        width: 400px;
+        height: 200px;
+    }
+    .project-title {
+        font-size: 130%;
+    }
+    
+    .project-content {
+        font-size: 80%;
+    }
+
+    .project-icon-container {
+        font-size: 1.5rem;
+    }
 }

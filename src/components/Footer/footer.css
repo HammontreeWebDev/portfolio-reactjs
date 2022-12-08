@@ -29,3 +29,11 @@ footer {
     font-size: 3.5rem;
     }
 }
+
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+    
+    .icon {
+    font-size: 2.5rem;
+    }
+}

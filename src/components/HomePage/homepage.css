@@ -22,3 +22,10 @@
         font-size: 400%;
     }
 }
+
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+    .home-page-title {
+        font-size: 300%;
+    }
+}
