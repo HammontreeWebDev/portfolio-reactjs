@@ -52,7 +52,6 @@
     color: var(--light-blue);
 }
 /* media queries */
-
 /* Surface Duo */
 @media screen and (max-width: 540px) {
     
