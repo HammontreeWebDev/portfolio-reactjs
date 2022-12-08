@@ -13,14 +13,7 @@ const HomePage = () => {
                 message
                 .pauseFor(1000)
                 .typeString('Welcome To My Portfolio!')
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString('Get started by clicking "About Me"')
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString('Enjoy!')
-                .start()
-                
+                .start()      
             }}
             />
             </FadeInDiv>

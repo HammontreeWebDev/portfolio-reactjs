@@ -51,7 +51,7 @@ export function App() {
     setShowHome(isFalse);
   }
 
-  const hightlightNav = (e) => {
+  const hightlightNav = (e, elem) => {
     const navItem = document.getElementsByClassName('nav-font');
 
     for (let i = 0; i < navItem.length; i++) {
@@ -61,9 +61,15 @@ export function App() {
       `;
 
       if (e.target === navItem[i]) {
-      e.target.style = `
+        e.target.style = `
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--light-blue), 0 0 70px var(--light-blue), 0 0 80px var(--light-blue), 0 0 100px var(--light-blue), 0 0 150px var(--light-blue);
       `;
+      }
+
+      if (elem === navItem[0]) {
+        elem.style = `
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--light-blue), 0 0 70px var(--light-blue), 0 0 80px var(--light-blue), 0 0 100px var(--light-blue), 0 0 150px var(--light-blue);
+        `;
       }
     }
   }
@@ -71,10 +77,10 @@ export function App() {
   const [showHome, setShowHome] = useState(true);
 
   const [showAbout, setShowAbout] = useState(false);
-  const aboutClick = (e) => {
+  const aboutClick = (e, elem) => {
     setAll(false);
     setShowAbout(true);
-    hightlightNav(e);
+    hightlightNav(e, elem);
   };
 
   const [showPortfolio, setShowPortfolio] = useState(false);
@@ -103,32 +109,45 @@ export function App() {
   // showContact ? contactNav = null : contactNav = 'Contact';
   // showResume ? resumeNav = null : resumeNav = 'Resume';
 
+  // useState to simulate an aboutMe click after welcome message is displayed...
+  // set it to false to prevent it from firing again (because it did, and it was obnoxious)
+  // about click has 2 params so we can event.target as well as use the element here in order to highlight the navItem we are viewing!
+  const [timeOut, setConstTimeOut] = useState(true);
+  if (timeOut) {
+    const aboutMeEl = document.getElementsByClassName('nav-font');
+    setTimeout(() => {
+      setAll(false);
+      aboutClick('', aboutMeEl[0]);
+    }, 6000)
+    setConstTimeOut(false);
+  }
+
   return (
     <>
-      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick}/>
+      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
       {/* Initially show the 'home page' */}
       {showHome ? <HomePage /> : null}
-      
+
       {/* conditionally render aboutme section if button is clicked */}
       {showAbout ? <AboutMe /> : null}
 
       {/* show several Project components based on finished projects we have to display */}
-      { showPortfolio ? 
-      <main className='portfolio-body'>
-        {/* MTG ++ App */}
-      <Project src={mtgApp} deployment={'https://peaceful-escarpment-11973.herokuapp.com/'} repository={'https://github.com/HammontreeWebDev/MTGpp'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | Express.js | MySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'}/>
-      {/* PokéWire App */}
-      <Project src={pokeApp} deployment={'https://luckysal.github.io/pokewire/index.html'} repository={'https://github.com/LuckySal/pokewire'} alt={'screenshot of PokéWire application'} appTitle={'PokéWire'} content={'HTML5 | JavaScript | jQuery | Bulma | CSS | API'}/>
-      {/* The README Generator Node App */}
-      <Project src={readMe} deployment={'https://github.com/HammontreeWebDev/The-README-Generator/blob/main/README.md'} repository={'https://github.com/HammontreeWebDev/The-README-Generator'} alt={'screenshot of The README Generator'} appTitle={'The README Generator'} content={'Node.js | JavaScript | CLI | Inquirer'}/>
-      {/* Weather Dashboard App */}
-      <Project src={weatherDashboard} deployment={'https://hammontreewebdev.github.io/Weather-Dashboard/'} repository={'https://github.com/HammontreeWebDev/Weather-Dashboard'} alt={'screenshot of Weather Dashboard'} appTitle={'Weather Dashboard'} content={'HTML5 | Bootstrap | CSS | JavaScript | jQuery'}/>
-      {/* Coming Soon */}
-      <Project src={underConstruction} deployment={'#'} repository={'#'} alt={'under construction badge on laptop'} appTitle={'Coming Soon!'} content={'working on it right now!'}/>
-      {/* Coming Soon */}
-      <Project src={welding} deployment={'#'} repository={'#'} alt={'man welding'} appTitle={'Coming Soon!'} content={'working on it right now!'}/>
-      </main> 
-      : null }
+      {showPortfolio ?
+        <main className='portfolio-body'>
+          {/* MTG ++ App */}
+          <Project src={mtgApp} deployment={'https://peaceful-escarpment-11973.herokuapp.com/'} repository={'https://github.com/HammontreeWebDev/MTGpp'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | Express.js | MySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'} />
+          {/* PokéWire App */}
+          <Project src={pokeApp} deployment={'https://luckysal.github.io/pokewire/index.html'} repository={'https://github.com/LuckySal/pokewire'} alt={'screenshot of PokéWire application'} appTitle={'PokéWire'} content={'HTML5 | JavaScript | jQuery | Bulma | CSS | API'} />
+          {/* The README Generator Node App */}
+          <Project src={readMe} deployment={'https://github.com/HammontreeWebDev/The-README-Generator/blob/main/README.md'} repository={'https://github.com/HammontreeWebDev/The-README-Generator'} alt={'screenshot of The README Generator'} appTitle={'The README Generator'} content={'Node.js | JavaScript | CLI | Inquirer'} />
+          {/* Weather Dashboard App */}
+          <Project src={weatherDashboard} deployment={'https://hammontreewebdev.github.io/Weather-Dashboard/'} repository={'https://github.com/HammontreeWebDev/Weather-Dashboard'} alt={'screenshot of Weather Dashboard'} appTitle={'Weather Dashboard'} content={'HTML5 | Bootstrap | CSS | JavaScript | jQuery'} />
+          {/* Coming Soon */}
+          <Project src={underConstruction} deployment={'#'} repository={'#'} alt={'under construction badge on laptop'} appTitle={'Coming Soon!'} content={'working on it right now!'} />
+          {/* Coming Soon */}
+          <Project src={welding} deployment={'#'} repository={'#'} alt={'man welding'} appTitle={'Coming Soon!'} content={'working on it right now!'} />
+        </main>
+        : null}
 
       {/* conditionally render contact section if button is clicked */}
       {showContact ? <Contact /> : null}
