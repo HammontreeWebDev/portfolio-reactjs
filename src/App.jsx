@@ -11,10 +11,11 @@ import Footer from './components/Footer/Footer';
 // import imgs needed for projects
 import mtgApp from "./assets/img/mtgpp.png";
 import pokeApp from "./assets/img/pokewire.png";
-import readMe from "./assets/img/READMEGENERATOR.png"
-import weatherDashboard from "./assets/img/WeatherDashboard.png"
-import underConstruction from "./assets/img/under-construction.jpg"
-import welding from "./assets/img/welding.jpg"
+import readMe from "./assets/img/READMEGENERATOR.png";
+import weatherDashboard from "./assets/img/WeatherDashboard.png";
+import underConstruction from "./assets/img/under-construction.jpg";
+import welding from "./assets/img/welding.jpg";
+import outtaTouch from "./assets/img/outta-touch.png";
 
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
@@ -134,6 +135,8 @@ export function App() {
       {/* show several Project components based on finished projects we have to display */}
       {showPortfolio ?
         <main className='portfolio-body'>
+          {/* Outta-Touch */}
+          <Project src={outtaTouch} deployment={'https://outta-touch.herokuapp.com/'} repository={'https://github.com/argounova/outta-touch'} alt={'under construction badge on laptop'} appTitle={'OUTTA TOUCH'} content={'MERN stack | Apollo | Websocket/GraphQL subscriptions'} />
           {/* MTG ++ App */}
           <Project src={mtgApp} deployment={'https://peaceful-escarpment-11973.herokuapp.com/'} repository={'https://github.com/HammontreeWebDev/MTGpp'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | Express.js | MySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'} />
           {/* PokéWire App */}
@@ -142,8 +145,6 @@ export function App() {
           <Project src={readMe} deployment={'https://github.com/HammontreeWebDev/The-README-Generator/blob/main/README.md'} repository={'https://github.com/HammontreeWebDev/The-README-Generator'} alt={'screenshot of The README Generator'} appTitle={'The README Generator'} content={'Node.js | JavaScript | CLI | Inquirer'} />
           {/* Weather Dashboard App */}
           <Project src={weatherDashboard} deployment={'https://hammontreewebdev.github.io/Weather-Dashboard/'} repository={'https://github.com/HammontreeWebDev/Weather-Dashboard'} alt={'screenshot of Weather Dashboard'} appTitle={'Weather Dashboard'} content={'HTML5 | Bootstrap | CSS | JavaScript | jQuery'} />
-          {/* Coming Soon */}
-          <Project src={underConstruction} deployment={'#'} repository={'#'} alt={'under construction badge on laptop'} appTitle={'Coming Soon!'} content={'working on it right now!'} />
           {/* Coming Soon */}
           <Project src={welding} deployment={'#'} repository={'#'} alt={'man welding'} appTitle={'Coming Soon!'} content={'working on it right now!'} />
         </main>
