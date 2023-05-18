@@ -8,20 +8,11 @@ enableCache('local');
 
 export default function Footer() {
 
-    // alert until linkedin is active again
-    const linkedInAlert = () => {
-        Swal.fire({
-            icon: 'info',
-            title: 'LinkedIn Unavailable',
-            text: 'Sorry, that this is not available right now. Please check back soon.'
-        })
-    }
-
     return (
         <footer>
-        <a className='hvr-buzz icon' href="https://github.com/HammontreeWebDev" ><Icon icon="fa:github-square" /></a>
-        <a className='hvr-buzz icon' onClick={linkedInAlert} ><Icon icon="brandico:linkedin-rect" /></a>
-        <a className='hvr-buzz icon' href="https://stackoverflow.com/users/20187731/hammontreewebdev"><Icon icon="cib:stackoverflow" /></a>
+        <a className='hvr-buzz icon' href="https://github.com/HammontreeWebDev" target="_blank" ><Icon icon="fa:github-square" /></a>
+        <a className='hvr-buzz icon' href="https://www.linkedin.com/in/kaileb-hammontree/" target="_blank" ><Icon icon="brandico:linkedin-rect" /></a>
+        <a className='hvr-buzz icon' href="https://stackoverflow.com/users/20187731/hammontreewebdev" target="_blank"><Icon icon="cib:stackoverflow" /></a>
         </footer>
         
     )
