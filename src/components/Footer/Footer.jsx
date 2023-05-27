@@ -1,7 +1,6 @@
 import React from "react";
 import './footer.css';
 import { Icon, enableCache } from '@iconify/react';
-import Swal from 'sweetalert2';
 
 // allow iconify icons to be stored locally for quicker rendering
 enableCache('local');

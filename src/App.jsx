@@ -7,15 +7,15 @@ import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
+import Swal from 'sweetalert2';
 
 // import imgs needed for projects
 import mtgApp from "./assets/img/mtgpp.png";
 import pokeApp from "./assets/img/pokewire.png";
 import readMe from "./assets/img/READMEGENERATOR.png";
 import weatherDashboard from "./assets/img/WeatherDashboard.png";
-import underConstruction from "./assets/img/under-construction.jpg";
-import welding from "./assets/img/welding.jpg";
 import outtaTouch from "./assets/img/outta-touch.png";
+import brofit from "./assets/img/brofit.png";
 
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
@@ -110,17 +110,12 @@ export function App() {
   // showContact ? contactNav = null : contactNav = 'Contact';
   // showResume ? resumeNav = null : resumeNav = 'Resume';
 
-  // useState to simulate an aboutMe click after welcome message is displayed...
-  // set it to false to prevent it from firing again (because it did, and it was obnoxious)
-  // about click has 2 params so we can event.target as well as use the element here in order to highlight the navItem we are viewing!
-  const [timeOut, setConstTimeOut] = useState(true);
-  if (timeOut) {
-    const aboutMeEl = document.getElementsByClassName('nav-font');
-    setTimeout(() => {
-      setAll(false);
-      aboutClick('', aboutMeEl[0]);
-    }, 6000)
-    setConstTimeOut(false);
+  const privateAlert = () => {
+    Swal.fire({
+      icon: 'info',
+      title: 'Content Not Available',
+      text: 'Due to request, this GitHub repository is private. You may view the deployed application by using the preview button.',
+    })
   }
 
   return (
@@ -135,8 +130,10 @@ export function App() {
       {/* show several Project components based on finished projects we have to display */}
       {showPortfolio ?
         <main className='portfolio-body'>
+          {/* BroFit Personal Training */}
+          <Project src={brofit} deployment={'https://www.reesewilder.com/'} click={privateAlert} alt={'screenshot of BroFit Personal Training website'} appTitle={'BroFit Personal Training'} content={'HTML | BootStrap | CSS | JavaScript'} />
           {/* Outta-Touch */}
-          <Project src={outtaTouch} deployment={'https://outta-touch.herokuapp.com/'} repository={'https://github.com/argounova/outta-touch'} alt={'under construction badge on laptop'} appTitle={'OUTTA TOUCH'} content={'MERN stack | Apollo | Websocket/GraphQL subscriptions'} />
+          <Project src={outtaTouch} deployment={'https://outta-touch.herokuapp.com/'} repository={'https://github.com/argounova/outta-touch'} alt={'screenshot of outta touch application'} appTitle={'OUTTA TOUCH'} content={'MERN stack | Apollo | Websocket/GraphQL subscriptions'} />
           {/* MTG ++ App */}
           <Project src={mtgApp} deployment={'https://peaceful-escarpment-11973.herokuapp.com/'} repository={'https://github.com/HammontreeWebDev/MTGpp'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | Express.js | MySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'} />
           {/* PokéWire App */}
@@ -145,8 +142,6 @@ export function App() {
           <Project src={readMe} deployment={'https://github.com/HammontreeWebDev/The-README-Generator/blob/main/README.md'} repository={'https://github.com/HammontreeWebDev/The-README-Generator'} alt={'screenshot of The README Generator'} appTitle={'The README Generator'} content={'Node.js | JavaScript | CLI | Inquirer'} />
           {/* Weather Dashboard App */}
           <Project src={weatherDashboard} deployment={'https://hammontreewebdev.github.io/Weather-Dashboard/'} repository={'https://github.com/HammontreeWebDev/Weather-Dashboard'} alt={'screenshot of Weather Dashboard'} appTitle={'Weather Dashboard'} content={'HTML5 | Bootstrap | CSS | JavaScript | jQuery'} />
-          {/* Coming Soon */}
-          <Project src={welding} deployment={'#'} repository={'#'} alt={'man welding'} appTitle={'Coming Soon!'} content={'working on it right now!'} />
         </main>
         : null}
 
