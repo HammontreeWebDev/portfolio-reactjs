@@ -10,12 +10,12 @@ import Footer from './components/Footer/Footer';
 import Swal from 'sweetalert2';
 
 // import imgs needed for projects
-import mtgApp from "./assets/img/mtgpp.png";
-import pokeApp from "./assets/img/pokewire.png";
-import readMe from "./assets/img/READMEGENERATOR.png";
-import weatherDashboard from "./assets/img/WeatherDashboard.png";
-import outtaTouch from "./assets/img/outta-touch.png";
-import brofit from "./assets/img/brofit.png";
+import mtgApp from "./assets/img/mtgpp.webp";
+import pokeApp from "./assets/img/pokewire.webp";
+import readMe from "./assets/img/READMEGENERATOR.webp";
+import weatherDashboard from "./assets/img/WeatherDashboard.webp";
+import outtaTouch from "./assets/img/outta-touch.webp";
+import brofit from "./assets/img/brofit.webp";
 
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
