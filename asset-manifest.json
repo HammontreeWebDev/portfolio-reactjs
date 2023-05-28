@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd743dea.css",
-    "main.js": "/static/js/main.bdd42369.js",
-    "static/media/mtgpp.png": "/static/media/mtgpp.25021bfd90f2adcceec2.png",
-    "static/media/brofit.png": "/static/media/brofit.7ed6d51565a83d52b630.png",
-    "static/media/wooden-balcony.jpg": "/static/media/wooden-balcony.3a22d3d7826c2263bf55.jpg",
-    "static/media/transparent-name-logo.png": "/static/media/transparent-name-logo.7510ff8dbdad7d48a28c.png",
-    "static/media/WeatherDashboard.png": "/static/media/WeatherDashboard.6d32140b6e57156afbfd.png",
-    "static/media/pokewire.png": "/static/media/pokewire.dfd86d3e2eaa1deb940e.png",
-    "static/media/avatar.JPG": "/static/media/avatar.02e546c53128cb56df58.JPG",
-    "static/media/outta-touch.png": "/static/media/outta-touch.4185dc3f2a07032a1188.png",
-    "static/media/READMEGENERATOR.png": "/static/media/READMEGENERATOR.41644148b2eab3459f0c.png",
+    "main.css": "/static/css/main.281d5640.css",
+    "main.js": "/static/js/main.94f88d76.js",
+    "static/media/wooden-balcony.webp": "/static/media/wooden-balcony.d9dd93351fdf2cd5dca7.webp",
+    "static/media/avatar.webp": "/static/media/avatar.1c1c945c267df1684e37.webp",
+    "static/media/mtgpp.webp": "/static/media/mtgpp.5300c20d3cbb79d63528.webp",
+    "static/media/brofit.webp": "/static/media/brofit.db27d89f1eb0a8559f9d.webp",
+    "static/media/transparent-name-logo-3550.webp": "/static/media/transparent-name-logo-3550.1b872e7162d17199c279.webp",
+    "static/media/WeatherDashboard.webp": "/static/media/WeatherDashboard.36594377bbd1c59867e5.webp",
+    "static/media/transparent-name-logo-3240.webp": "/static/media/transparent-name-logo-3240.024156bff6d67f2d3c50.webp",
+    "static/media/transparent-name-logo.webp": "/static/media/transparent-name-logo.c11e1a65ab75a5b347de.webp",
+    "static/media/transparent-name-logo-2900.webp": "/static/media/transparent-name-logo-2900.3e64d997351bf066b7c8.webp",
+    "static/media/transparent-name-logo-2520.webp": "/static/media/transparent-name-logo-2520.e1c037874f4091f4c2ad.webp",
+    "static/media/pokewire.webp": "/static/media/pokewire.1ac6742bbc858da41c4a.webp",
+    "static/media/transparent-name-logo-2060.webp": "/static/media/transparent-name-logo-2060.71f48f41702312d66863.webp",
+    "static/media/transparent-name-logo-1470.webp": "/static/media/transparent-name-logo-1470.0773fedde50199f8f04b.webp",
+    "static/media/outta-touch.webp": "/static/media/outta-touch.494f83727aa8c1151464.webp",
     "static/media/resume.pdf": "/static/media/resume.9f9837769c8a38f962b1.pdf",
+    "static/media/READMEGENERATOR.webp": "/static/media/READMEGENERATOR.e100d5e1f334cd7c2fee.webp",
+    "static/media/transparent-name-logo-300.webp": "/static/media/transparent-name-logo-300.7bd2adfffb8f17409d37.webp",
     "index.html": "/index.html",
-    "main.dd743dea.css.map": "/static/css/main.dd743dea.css.map",
-    "main.bdd42369.js.map": "/static/js/main.bdd42369.js.map"
+    "main.281d5640.css.map": "/static/css/main.281d5640.css.map",
+    "main.94f88d76.js.map": "/static/js/main.94f88d76.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd743dea.css",
-    "static/js/main.bdd42369.js"
+    "static/css/main.281d5640.css",
+    "static/js/main.94f88d76.js"
   ]
 }
