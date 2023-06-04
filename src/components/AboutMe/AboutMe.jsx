@@ -23,7 +23,11 @@ function AboutMe() {
                         My journey began in 2021 when I graduated from The University of Central Florida's Cyber Defense Professional Certificate Program. We spent 10 months learning several things from Computer Networking/Network Security all the way to Ethical Hacking and Game Theory. While I did enjoy the education I had received, I realized that cybersecurity was not what I actually wanted to do. The course that we took in Python opened up my eyes to all the cool things that programming had to offer, and so I began building silly text-based games that only worked in the CLI and unashamedly began showing them to all my friends and family.
                         <br />
                         <br />
-                        In 2022, I decided to join the Full-Stack Web Development Bootcamp with UCF so that I could gain the knowledge and skills necessary to fuel my creative nature. I graduated with an A+ in December 2022. Now, I can build full-stack websites and applications! Every group project that I have been a part of has received high praise from my peers and leaders. There is no doubt that my work ethic, practical experience, and knowledge will allow me to tackle any project that comes my way, including yours.
+                        In 2022, I decided to join the Full-Stack Web Development Bootcamp with UCF so that I could gain the knowledge and skills necessary to fuel my creative nature. I graduated with an A+ in December 2022. Now, I can build full-stack websites and applications! Every group project that I have been a part of has received high praise from my peers and leaders.
+                        <br />
+                        <br />
+                        In June 2023 I founded Hammontree Full-Stack Solutions, LLC.
+                        There is no doubt that my work ethic, practical experience, and knowledge will allow me to tackle any project that comes my way, including yours.
                         <br />
                         <br />
                         Feel free to navigate to the portfolio tab and check out various projects that I have completed. Hover over the preview of the project for more details on the technology that was used to build it, and click on the preview icon to be redirected to the application itself.
