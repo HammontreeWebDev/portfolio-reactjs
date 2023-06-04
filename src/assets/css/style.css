@@ -27,7 +27,7 @@
 body {
     /* set background image for entire body that will be there regardless of what component is shown */
     /* This picture was taken on a family trip in TN! */
-    background-image: url("../img/wooden-balcony.webp");
+    background-image: url("../img/background.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     /* fixed background for continuity */
