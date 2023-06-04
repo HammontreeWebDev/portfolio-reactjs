@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavBar } from "./components/Navbar/Navbar";
-import { WelcomeAnimation, DeleteWelcome } from "./components/Welcome/Welcome";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Project from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
@@ -25,20 +24,6 @@ let aboutNav = 'About Me';
 let portfolioNav = 'Portfolio';
 let contactNav = 'Contact';
 let resumeNav = 'Resume';
-
-// Render welcome animation as page initializes
-export function Init() {
-  return (
-    <WelcomeAnimation />
-  );
-};
-
-// transition out welcome animation
-export function WelcomeTransition() {
-  return (
-    <DeleteWelcome />
-  )
-}
 
 // function to render App after intro animations
 export function App() {
