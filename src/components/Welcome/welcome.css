@@ -8,3 +8,17 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 700px) {
+    .homepage-img {
+        min-height: 60vh;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homepage-img {
+        min-height: 40vh;
+    }
+}
