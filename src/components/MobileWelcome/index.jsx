@@ -3,13 +3,13 @@ import './assets/css/mobile-welcome.css';
 import mobileVideo from './assets/vid/mobile-intro.mp4';
 
 const MobileWelcome = () => {
-    const mobileIntrolEl = document.querySelector('#mobile-intro');
+    // const mobileIntrolEl = document.querySelector('#mobile-intro');
 
-    async function playVideo() {
-        await mobileIntrolEl.play();
-    }
+    // async function playVideo() {
+    //     await mobileIntrolEl.play();
+    // }
 
-    playVideo();
+    // playVideo();
 
     return (
         <section className="mobile-container">
