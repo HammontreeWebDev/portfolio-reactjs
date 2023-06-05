@@ -2,7 +2,7 @@ import React from 'react';
 import './welcome.css';
 import introVideo from './assets/vid/web-intro.mp4';
 import { Icon, enableCache } from '@iconify/react';
-import posterImg from '../../assets/img/poster.png';
+import posterImg from '../../assets/img/poster.webp';
 
 enableCache('local');
 
