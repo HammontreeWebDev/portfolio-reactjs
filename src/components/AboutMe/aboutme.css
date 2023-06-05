@@ -1,7 +1,7 @@
 /* !important on override of bootstrap */
 .custom-card {
     width: 70%;
-    font-family: var(--rubik);
+    /* font-family: var(--rubik); */
     border-radius: 1rem;
     margin: 3%;
 }

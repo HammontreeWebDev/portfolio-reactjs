@@ -22,6 +22,7 @@
     --rubik: 'Rubik', sans-serif;
     --dirt: 'Rubik Dirt', cursive;
     --distressed: 'Rubik Distressed', cursive;
+    --body-font: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
     background-repeat:no-repeat;
     /* fixed background for continuity */
     background-attachment: fixed;
+    font-family: var(--body-font);
 }
 
 .text-pink {

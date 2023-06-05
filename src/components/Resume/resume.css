@@ -35,7 +35,7 @@
 }
 
 .resume-btn {
-    font-family: var(--distressed);
+    /* font-family: var(--distressed); */
     font-size: 200%;
     color: var(--shade4);
     text-decoration: none;

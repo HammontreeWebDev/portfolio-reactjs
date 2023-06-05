@@ -1,6 +1,6 @@
 
 .contact-main {
-    font-family: var(--rubik);
+    /* font-family: var(--rubik); */
     display: flex;
     justify-content: center;
     align-items: center;

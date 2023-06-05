@@ -12,7 +12,7 @@
 
 .nav-font {
     text-decoration: none;
-    font-family: var(--rubik);
+    /* font-family: var(--rubik); */
     color: var(--light-pink);
     font-size: 150%;
 }
