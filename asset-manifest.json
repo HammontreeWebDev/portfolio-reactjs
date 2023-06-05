@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.281d5640.css",
-    "main.js": "/static/js/main.e94c0d9a.js",
-    "static/media/wooden-balcony.webp": "/static/media/wooden-balcony.d9dd93351fdf2cd5dca7.webp",
-    "static/media/avatar.webp": "/static/media/avatar.1c1c945c267df1684e37.webp",
+    "main.css": "/static/css/main.d5aef2f2.css",
+    "main.js": "/static/js/main.fdafcccb.js",
+    "static/media/web-intro.mp4": "/static/media/web-intro.0673872673dfa3251720.mp4",
+    "static/media/trans-web-header.png": "/static/media/trans-web-header.d7a81836f831acf0826f.png",
+    "static/media/background.jpg": "/static/media/background.7f5552f3dcd2d08b76de.jpg",
     "static/media/Technical-Resume.pdf": "/static/media/Technical-Resume.deef5eff5164c41b4d9b.pdf",
     "static/media/mtgpp.webp": "/static/media/mtgpp.5300c20d3cbb79d63528.webp",
     "static/media/brofit.webp": "/static/media/brofit.db27d89f1eb0a8559f9d.webp",
-    "static/media/transparent-name-logo-3550.webp": "/static/media/transparent-name-logo-3550.1b872e7162d17199c279.webp",
     "static/media/WeatherDashboard.webp": "/static/media/WeatherDashboard.36594377bbd1c59867e5.webp",
-    "static/media/transparent-name-logo-3240.webp": "/static/media/transparent-name-logo-3240.024156bff6d67f2d3c50.webp",
-    "static/media/transparent-name-logo.webp": "/static/media/transparent-name-logo.c11e1a65ab75a5b347de.webp",
-    "static/media/transparent-name-logo-2900.webp": "/static/media/transparent-name-logo-2900.3e64d997351bf066b7c8.webp",
-    "static/media/transparent-name-logo-2520.webp": "/static/media/transparent-name-logo-2520.e1c037874f4091f4c2ad.webp",
     "static/media/pokewire.webp": "/static/media/pokewire.1ac6742bbc858da41c4a.webp",
-    "static/media/transparent-name-logo-2060.webp": "/static/media/transparent-name-logo-2060.71f48f41702312d66863.webp",
-    "static/media/transparent-name-logo-1470.webp": "/static/media/transparent-name-logo-1470.0773fedde50199f8f04b.webp",
+    "static/media/avatar.jpeg": "/static/media/avatar.3b358f05a5d622dcd357.jpeg",
     "static/media/outta-touch.webp": "/static/media/outta-touch.494f83727aa8c1151464.webp",
     "static/media/READMEGENERATOR.webp": "/static/media/READMEGENERATOR.e100d5e1f334cd7c2fee.webp",
-    "static/media/transparent-name-logo-300.webp": "/static/media/transparent-name-logo-300.7bd2adfffb8f17409d37.webp",
     "index.html": "/index.html",
-    "main.281d5640.css.map": "/static/css/main.281d5640.css.map",
-    "main.e94c0d9a.js.map": "/static/js/main.e94c0d9a.js.map"
+    "main.d5aef2f2.css.map": "/static/css/main.d5aef2f2.css.map",
+    "main.fdafcccb.js.map": "/static/js/main.fdafcccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.281d5640.css",
-    "static/js/main.e94c0d9a.js"
+    "static/css/main.d5aef2f2.css",
+    "static/js/main.fdafcccb.js"
   ]
 }
