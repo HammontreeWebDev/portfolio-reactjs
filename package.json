@@ -47,7 +47,8 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^4.0.1",
+    "@iconify/icons-eos-icons": "^1.2.6",
+    "@iconify/react": "^4.1.0",
     "gh-pages": "^4.0.0"
   }
 }
