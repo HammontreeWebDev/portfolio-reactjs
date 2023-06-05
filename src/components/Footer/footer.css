@@ -1,10 +1,22 @@
 footer {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     width: 100vw;
     justify-content: center;
     align-items: center;
     background-color: var(--trans-shade4);
+}
+
+.footer-row{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--light-blue);
 }
 
 .icon {

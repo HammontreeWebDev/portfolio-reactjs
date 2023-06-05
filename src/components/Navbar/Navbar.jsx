@@ -12,6 +12,7 @@ export function NavBar(props) {
       <img className='nav-img' src={navNameLogo} alt='Avatar of Kaileb with his name and text that says Full-Stack Web Development'/>
       <nav className='container-fluid custom-nav'>
         <a className={'nav-font hvr-buzz'} onClick={props.showAbout} >{props.about}</a>
+        <a className={'nav-font hvr-buzz'} href='#copyright'>Socials</a>
         <a className='nav-font hvr-buzz' onClick={props.showPortfolio} >{props.portfolio}</a>
         <a className='nav-font hvr-buzz' onClick={props.showContact} >{props.contact}</a>
         <a className='nav-font hvr-buzz' onClick={props.showResume} >{props.resume}</a>
