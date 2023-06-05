@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5aef2f2.css",
+    "main.css": "/static/css/main.b7957137.css",
     "main.js": "/static/js/main.fdafcccb.js",
     "static/media/web-intro.mp4": "/static/media/web-intro.0673872673dfa3251720.mp4",
     "static/media/trans-web-header.png": "/static/media/trans-web-header.d7a81836f831acf0826f.png",
@@ -14,11 +14,11 @@
     "static/media/outta-touch.webp": "/static/media/outta-touch.494f83727aa8c1151464.webp",
     "static/media/READMEGENERATOR.webp": "/static/media/READMEGENERATOR.e100d5e1f334cd7c2fee.webp",
     "index.html": "/index.html",
-    "main.d5aef2f2.css.map": "/static/css/main.d5aef2f2.css.map",
+    "main.b7957137.css.map": "/static/css/main.b7957137.css.map",
     "main.fdafcccb.js.map": "/static/js/main.fdafcccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5aef2f2.css",
+    "static/css/main.b7957137.css",
     "static/js/main.fdafcccb.js"
   ]
 }
