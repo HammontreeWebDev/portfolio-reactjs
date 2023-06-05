@@ -9,11 +9,7 @@ enableCache('local');
 // props
 export const WelcomeAnimation = () => {
     return (
-        <>
-            <video preload='auto' autoPlay muted className='homepage-img' poster={posterImg}>
-                <source src={introVideo} type='video/mp4' />
-            </video>
-        </>
+            <video preload='auto' src={introVideo} autoPlay muted className='homepage-img' poster={posterImg} />
     );
 
 }
