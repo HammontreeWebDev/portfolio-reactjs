@@ -4,13 +4,6 @@ import mobileVideo from './assets/vid/mobile-intro.mp4';
 import mobileThumb from './assets/img/thumbnail.png';
 
 const MobileWelcome = () => {
-    // const mobileIntrolEl = document.querySelector('#mobile-intro');
-
-    // async function playVideo() {
-    //     await mobileIntrolEl.play();
-    // }
-
-    // playVideo();
 
     return (
         <section className="mobile-container">

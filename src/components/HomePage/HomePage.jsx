@@ -1,17 +1,27 @@
 import React from "react";
 import './homepage.css';
-import {WelcomeAnimation} from "../Welcome/Welcome";
+import { WelcomeAnimation } from "../Welcome/Welcome";
 import MobileWelcome from "../MobileWelcome";
 
 
 const HomePage = () => {
+    let width = window.innerWidth;
 
-    return (
-        <main className="home-page">
-            <WelcomeAnimation />
-            <MobileWelcome />
-        </main>
-    )
+    if (width > 540) {
+        return (
+            <main className="home-page">
+                <WelcomeAnimation />
+            </main>
+        )
+    }
+    else if (width <= 540) {
+        return (
+            <main className="home-page">
+                <MobileWelcome />
+            </main>
+        )
+    }
+
 }
 
 export default HomePage;
