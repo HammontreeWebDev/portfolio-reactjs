@@ -35,6 +35,7 @@ body {
     /* fixed background for continuity */
     background-attachment: fixed;
     font-family: var(--body-font);
+    min-height: 100vh;
 }
 
 .text-pink {

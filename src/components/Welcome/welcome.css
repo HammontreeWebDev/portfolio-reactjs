@@ -1,5 +1,6 @@
 .homepage-img {
     max-width: 100vw;
+    display: block;
 }
 .homepage-main {
     background-color: var(--trans-shade4);
@@ -21,6 +22,12 @@ justify-self: center;
         min-height: 60vh;
         object-fit: cover;
         object-position: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .homepage-img {
+        display: none;
     }
 }
 

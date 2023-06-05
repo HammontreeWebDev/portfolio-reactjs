@@ -1,0 +1,17 @@
+.mobile-container {
+    max-width: 100vw;
+    min-height: 90vw;
+    background-color: var(--shade4);
+    display: none;
+}
+
+.mobile-video {
+    max-width: 100vw;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 540px) {
+    .mobile-container {
+        display: block;
+    }
+}
