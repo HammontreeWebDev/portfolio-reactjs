@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './welcome.css';
 import introVideo from './assets/vid/web-intro.mp4';
+import { Icon, enableCache } from '@iconify/react';
+enableCache('local');
 
 export const WelcomeAnimation = () => {
     const [isLoading, setLoading] = useState(true);
@@ -11,7 +13,10 @@ export const WelcomeAnimation = () => {
 
     return (
         <>
-            {isLoading && <h1 id='loader-container'>Loading...</h1>}
+            {isLoading && <div className="loading-div">
+            <h1>Loading...</h1>
+            <Icon className='loading-icon' icon="line-md:loading-loop"></Icon>
+            </div>}
             <video id='web-video' preload='auto' src={introVideo} autoPlay muted className='homepage-img' onPlay={removeLoader} style={isLoading ? {visibility: "hidden"} : {visibility: "visible"}}/>
         </>
     );
