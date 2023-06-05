@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './welcome.css';
 import introVideo from './assets/vid/web-intro.mp4';
-import { Icon, enableCache } from '@iconify/react';
-import posterImg from '../../assets/img/poster.webp';
 
-enableCache('local');
-
-// props
 export const WelcomeAnimation = () => {
-    return (
-            <video preload='auto' src={introVideo} autoPlay muted className='homepage-img' poster={posterImg} />
-    );
+    const [isLoading, setLoading] = useState(true);
 
+    function removeLoader() {
+        setLoading(false)
+    }
+
+    return (
+        <>
+            {isLoading && <h1 id='loader-container'>Loading...</h1>}
+            <video id='web-video' preload='auto' src={introVideo} autoPlay muted className='homepage-img' onPlay={removeLoader} style={isLoading ? {visibility: "hidden"} : {visibility: "visible"}}/>
+        </>
+    );
 }
