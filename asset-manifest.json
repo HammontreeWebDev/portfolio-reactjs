@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.101f04c3.css",
-    "main.js": "/static/js/main.24820fa4.js",
+    "main.css": "/static/css/main.e9ed0cbe.css",
+    "main.js": "/static/js/main.3aaa0e99.js",
     "static/media/mobile-intro.mp4": "/static/media/mobile-intro.53fd38f04c8d157602b9.mp4",
     "static/media/web-intro.mp4": "/static/media/web-intro.0673872673dfa3251720.mp4",
-    "static/media/trans-web-header.png": "/static/media/trans-web-header.d7a81836f831acf0826f.png",
-    "static/media/thumbnail.png": "/static/media/thumbnail.d4c7b32f3811724a86cb.png",
-    "static/media/poster.png": "/static/media/poster.8400d97252003e18eedb.png",
-    "static/media/background.jpg": "/static/media/background.7f5552f3dcd2d08b76de.jpg",
     "static/media/Technical-Resume.pdf": "/static/media/Technical-Resume.deef5eff5164c41b4d9b.pdf",
     "static/media/mtgpp.webp": "/static/media/mtgpp.5300c20d3cbb79d63528.webp",
     "static/media/brofit.webp": "/static/media/brofit.db27d89f1eb0a8559f9d.webp",
     "static/media/WeatherDashboard.webp": "/static/media/WeatherDashboard.36594377bbd1c59867e5.webp",
+    "static/media/background.webp": "/static/media/background.205b6ab1a76246b08cbe.webp",
     "static/media/pokewire.webp": "/static/media/pokewire.1ac6742bbc858da41c4a.webp",
-    "static/media/avatar.jpeg": "/static/media/avatar.3b358f05a5d622dcd357.jpeg",
+    "static/media/trans-web-header.webp": "/static/media/trans-web-header.f2bd27a1813d99856aad.webp",
+    "static/media/avatar.webp": "/static/media/avatar.de66dd1594d3c3a535c8.webp",
     "static/media/outta-touch.webp": "/static/media/outta-touch.494f83727aa8c1151464.webp",
     "static/media/READMEGENERATOR.webp": "/static/media/READMEGENERATOR.e100d5e1f334cd7c2fee.webp",
     "index.html": "/index.html",
-    "main.101f04c3.css.map": "/static/css/main.101f04c3.css.map",
-    "main.24820fa4.js.map": "/static/js/main.24820fa4.js.map"
+    "main.e9ed0cbe.css.map": "/static/css/main.e9ed0cbe.css.map",
+    "main.3aaa0e99.js.map": "/static/js/main.3aaa0e99.js.map"
   },
   "entrypoints": [
-    "static/css/main.101f04c3.css",
-    "static/js/main.24820fa4.js"
+    "static/css/main.e9ed0cbe.css",
+    "static/js/main.3aaa0e99.js"
   ]
 }
