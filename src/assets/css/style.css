@@ -28,7 +28,7 @@
 body {
     /* set background image for entire body that will be there regardless of what component is shown */
     /* This picture was taken on a family trip in TN! */
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat:no-repeat;
