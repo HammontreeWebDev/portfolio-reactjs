@@ -17,7 +17,7 @@ export const WelcomeAnimation = () => {
             <h1>Loading...</h1>
             <Icon className='loading-icon' icon="line-md:loading-loop"></Icon>
             </div>}
-            <video id='web-video' preload='auto' src={introVideo} autoPlay muted className='homepage-img' onPlay={removeLoader} style={isLoading ? {visibility: "hidden"} : {visibility: "visible"}}/>
+            <video id='web-video' preload='auto' src={introVideo} autoPlay={true} muted={true} className='homepage-img' onPlay={removeLoader} onLoadedData={removeLoader} style={isLoading ? {visibility: "hidden"} : {visibility: "visible"}}/>
         </>
     );
 }

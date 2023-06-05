@@ -17,7 +17,7 @@ const MobileWelcome = () => {
             <h1>Loading...</h1>
             <Icon className='loading-icon' icon="line-md:loading-loop"></Icon>
             </div>}
-            <video className="mobile-video" preload="auto" autoPlay={true} loop={true} muted={true} playsInline={true} src={mobileVideo} onPlay={removeLoader} style={isLoading ? {visibility: "hidden"} : {visibility: "visible"}} />
+            <video className="mobile-video" preload="auto" autoPlay={true} loop={true} muted={true} playsInline={true} src={mobileVideo} onPlay={removeLoader} onLoadedData={removeLoader} style={isLoading ? {visibility: "hidden"} : {visibility: "visible"}} />
         </section>
     )
 }
