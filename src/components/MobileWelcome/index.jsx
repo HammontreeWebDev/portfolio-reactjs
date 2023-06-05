@@ -13,7 +13,7 @@ const MobileWelcome = () => {
 
     return (
         <section className="mobile-container">
-            <video id="mobile-intro" className="mobile-video" preload="auto" autoPlay muted={true} loop src={mobileVideo} />
+            <video id="mobile-intro" className="mobile-video" preload="auto" autoPlay={true} muted={true} loop={true} controls={true} src={mobileVideo} />
         </section>
     )
 }
