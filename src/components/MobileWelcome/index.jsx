@@ -14,7 +14,7 @@ const MobileWelcome = () => {
 
     return (
         <section className="mobile-container">
-            <video id="mobile-intro" className="mobile-video" preload="auto" controls={true} src={mobileVideo} poster={mobileThumb} />
+            <video id="mobile-intro" className="mobile-video" preload="auto" autoPlay={true} loop={true} muted={true} playsInline={true} src={mobileVideo} poster={mobileThumb} />
         </section>
     )
 }
