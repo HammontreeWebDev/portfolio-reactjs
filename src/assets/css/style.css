@@ -30,6 +30,7 @@ body {
     /* This picture was taken on a family trip in TN! */
     background-image: url("../img/background.jpg");
     background-size: cover;
+    background-position: 50% 50%;
     background-repeat:no-repeat;
     /* fixed background for continuity */
     background-attachment: fixed;

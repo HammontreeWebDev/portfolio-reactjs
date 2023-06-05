@@ -47,13 +47,22 @@
     .nav-img {
         max-width: 50%;
     }
+
+    @media screen and (max-width: 500px) {
+        .nav-font {
+            font-size: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav-font {
+        font-size: 80%;
+    }
 }
 
 /* Galaxy Fold */
 @media screen and (max-width: 280px) {
-    .nav-font {
-        font-size: 80%;
-       } 
        .nav-img {
         max-width: 75%;
     }
