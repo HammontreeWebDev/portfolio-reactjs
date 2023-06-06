@@ -11,8 +11,6 @@ import Swal from 'sweetalert2';
 // import imgs needed for projects
 import mtgApp from "./assets/img/mtgpp.webp";
 import pokeApp from "./assets/img/pokewire.webp";
-import readMe from "./assets/img/READMEGENERATOR.webp";
-import weatherDashboard from "./assets/img/WeatherDashboard.webp";
 import outtaTouch from "./assets/img/outta-touch.webp";
 import brofit from "./assets/img/brofit.webp";
 
@@ -123,10 +121,6 @@ export function App() {
           <Project src={mtgApp} deployment={'https://peaceful-escarpment-11973.herokuapp.com/'} repository={'https://github.com/HammontreeWebDev/MTGpp'} alt={'screenshot of MGT++ deck building application'} appTitle={'MTG++'} content={'Node.js | Express.js | MySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'} />
           {/* PokéWire App */}
           <Project src={pokeApp} deployment={'https://luckysal.github.io/pokewire/index.html'} repository={'https://github.com/LuckySal/pokewire'} alt={'screenshot of PokéWire application'} appTitle={'PokéWire'} content={'HTML5 | JavaScript | jQuery | Bulma | CSS | API'} />
-          {/* The README Generator Node App */}
-          <Project src={readMe} deployment={'https://github.com/HammontreeWebDev/The-README-Generator/blob/main/README.md'} repository={'https://github.com/HammontreeWebDev/The-README-Generator'} alt={'screenshot of The README Generator'} appTitle={'The README Generator'} content={'Node.js | JavaScript | CLI | Inquirer'} />
-          {/* Weather Dashboard App */}
-          <Project src={weatherDashboard} deployment={'https://hammontreewebdev.github.io/Weather-Dashboard/'} repository={'https://github.com/HammontreeWebDev/Weather-Dashboard'} alt={'screenshot of Weather Dashboard'} appTitle={'Weather Dashboard'} content={'HTML5 | Bootstrap | CSS | JavaScript | jQuery'} />
         </main>
         : null}
 
