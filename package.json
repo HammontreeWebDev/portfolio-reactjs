@@ -1,7 +1,7 @@
 {
   "name": "hammontreewebdev-portfolio-reactjs",
   "version": "0.1.0",
-  "homepage": "https://www.portfolio.hammontreewebdev.live",
+  "homepage": "https://www.kailebhammontree.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
