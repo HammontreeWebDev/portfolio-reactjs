@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
+import Socials from "./components/Socials";
+import Services from "./components/Services";
 import Swal from 'sweetalert2';
 
 // import imgs needed for projects
@@ -27,6 +29,8 @@ export function App() {
     setShowContact(isFalse);
     setShowResume(isFalse);
     setShowHome(isFalse);
+    setShowServices(isFalse);
+    setShowSocials(isFalse);
   }
 
   const hightlightNav = (e, elem) => {
@@ -82,6 +86,19 @@ export function App() {
     hightlightNav(e);
   };
 
+  const [showServices, setShowServices] = useState(false);
+  const servicesClick = (e) => {
+    setAll(false);
+    setShowServices(true);
+    hightlightNav(e);
+  }
+
+  const [showSocials, setShowSocials] = useState(false);
+  const socialsClick = (e) => {
+    setAll(false);
+    setShowSocials(true);
+  }
+
   // showAbout ? aboutNav = null : aboutNav = 'About Me';
   // showPortfolio ? portfolioNav = null : portfolioNav = 'Portfolio';
   // showContact ? contactNav = null : contactNav = 'Contact';
@@ -97,7 +114,7 @@ export function App() {
 
   return (
     <>
-      <NavBar showAbout={aboutClick} showPortfolio={portfolioClick} showContact={contactClick} showResume={resumeClick} />
+      <NavBar showAbout={aboutClick} showPortfolio={portfolioClick} showContact={contactClick} showResume={resumeClick} showServices={servicesClick} showSocials={socialsClick} />
       {/* Initially show the 'home page' */}
       {showHome ? <HomePage /> : null}
 
