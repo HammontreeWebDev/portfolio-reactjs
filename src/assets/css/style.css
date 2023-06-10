@@ -41,3 +41,9 @@ body {
 .text-pink {
     color: var(--light-pink);
 }
+
+main {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+/* TODO: Decide whether you want to change the styled components back to divs so animation doesnt take away bg color */

@@ -6,7 +6,7 @@ import avatar from '../../assets/img/avatar.webp';
 function AboutMe() {
 
     return (
-        <FlipInXMain className='about-me-body'>
+        <FlipInXMain className='about-me-body main-bg'>
             <section className=' custom-card'>
                 <h2 className='custom-card-header'>
                     About Me
