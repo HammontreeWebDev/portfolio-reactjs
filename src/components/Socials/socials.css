@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    background-color: rgba(0, 0, 0, .75);
 }
 
 .social-wrapper {
@@ -36,15 +37,12 @@ color: var(--light-blue);
 color: var(--light-blue);
 }
 
-.social-container iframe {
+.frame-dimensions {
     height: 500px;
     width: 100%;
-    border: 3px solid var(--light-pink);
-    border-radius: 1rem;
+    overflow-y: scroll;
 }
 
 .social-img {
     width: 100%;
-    border: 3px solid var(--light-pink);
-    border-radius: 1rem;
 }

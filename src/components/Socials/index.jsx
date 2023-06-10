@@ -16,7 +16,7 @@ function Socials() {
                         Visit GitHub
                     </a>
 
-                    <img className="social-img" src="https://github-readme-streak-stats.herokuapp.com/?user=HammontreeWebDev&theme=tokyonight" alt="mystreak" />
+                    <img className="social-img" src="https://github-readme-streak-stats.herokuapp.com/?user=HammontreeWebDev&theme=city-lights&hide_border=true" alt="mystreak" />
 
                 </FadeInDiv>
 
@@ -27,7 +27,7 @@ function Socials() {
                     Visit LinkedIn
                     </a>
 
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7071853194078789633" title="Hammontree Full-Stack Solutions LLC LinkedIn Post"></iframe>
+                    <iframe className="frame-dimensions" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7071853194078789633" title="Hammontree Full-Stack Solutions LLC LinkedIn Post"></iframe>
 
                 </FadeInDiv>
 
@@ -38,7 +38,7 @@ function Socials() {
                     Visit Facebook
                     </a>
 
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhammontreefullstacksolutions%2Fposts%2Fpfbid026QveGZsottAADopRntug6N7F3EhMwj4xuRaAKbSm614S8imbVyTyvjrxm8VgunYRl" title="Hammontree Full-Stack Solutions LLC Facebook Post"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhammontreefullstacksolutions%2F%3Fshow_switched_toast%3D0%26show_invite_to_follow%3D0%26show_switched_tooltip%3D0%26show_podcast_settings%3D0%26show_community_review_changes%3D0%26show_community_rollback%3D0%26show_follower_visibility_disclosure%3D0&tabs&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="auto" title="Hammontree Full-Stack Solutions LLC Facebook Page"></iframe>
 
                 </FadeInDiv>
             </section>
