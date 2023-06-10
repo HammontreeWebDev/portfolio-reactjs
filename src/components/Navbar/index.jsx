@@ -21,14 +21,14 @@ export function NavBar(props) {
           </Dropdown.Toggle>
 
           <Dropdown.Menu id='custom-menu'>
-            <Dropdown.Item><button onClick={props.showSocials}>Socials</button></Dropdown.Item>
+            <Dropdown.Item><button className='nav-font' onClick={props.showSocials}>Socials</button></Dropdown.Item>
 
             <Dropdown.Item>
-              <button onClick={props.showContact} >Contact Form</button>
+              <button className='nav-font' onClick={props.showContact} >Contact Form</button>
             </Dropdown.Item>
 
             <Dropdown.Item>
-            <button onClick={props.showResume} >Download Resume</button>
+            <button className='nav-font' onClick={props.showResume} >Download Resume</button>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

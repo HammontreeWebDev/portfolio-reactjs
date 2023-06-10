@@ -12,6 +12,10 @@
     font-size: 150%;
 }
 
+#custom-menu {
+    background-color: var(--trans-shade4);
+}
+
 #custom-menu button {
     background-color: transparent;
     border: none;
@@ -46,7 +50,7 @@
 
 /* ipad air */
 @media screen and (max-width: 820px) {
-   .nav-font {
+   .nav-font, #custom-dropdown {
     font-size: 120%;
    } 
    .nav-img {
@@ -65,14 +69,14 @@
     }
 
     @media screen and (max-width: 500px) {
-        .nav-font {
+        .nav-font, #custom-dropdown {
             font-size: 100%;
         }
     }
 }
 
 @media screen and (max-width: 360px) {
-    .nav-font {
+    .nav-font, #custom-dropdown {
         font-size: 80%;
     }
 }
