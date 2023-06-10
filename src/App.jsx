@@ -97,6 +97,7 @@ export function App() {
   const socialsClick = (e) => {
     setAll(false);
     setShowSocials(true);
+    hightlightNav(e);
   }
 
   // showAbout ? aboutNav = null : aboutNav = 'About Me';
