@@ -141,6 +141,12 @@ export function App() {
       {/* conditionally render resume section if button is clicked */}
       {showResume ? <Resume /> : null}
 
+      {/* conditionally render Services section if button is clicked */}
+      {showServices ? <Services /> : null}
+
+      {/* conditionally render Socials section if button is clicked */}
+      {showSocials ? <Socials /> : null}
+
       <Footer />
     </>
   )
