@@ -27,6 +27,8 @@ function Socials() {
                     Visit LinkedIn
                     </a>
 
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7071853194078789633" title="Hammontree Full-Stack Solutions LLC LinkedIn Post"></iframe>
+
                 </FadeInDiv>
 
                 <FadeInDiv className="social-container">
@@ -35,6 +37,8 @@ function Socials() {
                     <a href="https://www.facebook.com/profile.php?id=100093003297638" target="_blank" >
                     Visit Facebook
                     </a>
+
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhammontreefullstacksolutions%2Fposts%2Fpfbid026QveGZsottAADopRntug6N7F3EhMwj4xuRaAKbSm614S8imbVyTyvjrxm8VgunYRl" title="Hammontree Full-Stack Solutions LLC Facebook Post"></iframe>
 
                 </FadeInDiv>
             </section>

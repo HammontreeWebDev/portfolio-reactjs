@@ -36,6 +36,15 @@ color: var(--light-blue);
 color: var(--light-blue);
 }
 
+.social-container iframe {
+    height: 500px;
+    width: 100%;
+    border: 3px solid var(--light-pink);
+    border-radius: 1rem;
+}
+
 .social-img {
     width: 100%;
+    border: 3px solid var(--light-pink);
+    border-radius: 1rem;
 }
