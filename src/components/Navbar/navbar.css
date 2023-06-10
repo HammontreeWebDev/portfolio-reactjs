@@ -5,6 +5,18 @@
     align-items: center;
 }
 
+#custom-dropdown {
+    background-color: transparent;
+    border: none;
+    color: var(--light-pink);
+    font-size: 150%;
+}
+
+#custom-menu button {
+    background-color: transparent;
+    border: none;
+}
+
 .header-bg {
     display: flex;
     background-color: var(--trans-shade4);

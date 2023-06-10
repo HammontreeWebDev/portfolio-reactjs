@@ -17,12 +17,6 @@ import brofit from "./assets/img/brofit.webp";
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
 
-// declare any variables
-let aboutNav = 'About Me';
-let portfolioNav = 'Portfolio';
-let contactNav = 'Contact';
-let resumeNav = 'Resume';
-
 // function to render App after intro animations
 export function App() {
 
@@ -103,7 +97,7 @@ export function App() {
 
   return (
     <>
-      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
+      <NavBar showAbout={aboutClick} showPortfolio={portfolioClick} showContact={contactClick} showResume={resumeClick} />
       {/* Initially show the 'home page' */}
       {showHome ? <HomePage /> : null}
 
