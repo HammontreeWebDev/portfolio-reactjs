@@ -26,7 +26,7 @@ function AboutMe() {
                         In 2022, I decided to join the Full-Stack Web Development Bootcamp with UCF so that I could gain the knowledge and skills necessary to fuel my creative nature. I graduated with an A+ in December 2022. Now, I can build full-stack websites and applications! Every group project that I have been a part of has received high praise from my peers and leaders.
                         <br />
                         <br />
-                        In June 2023 I founded Hammontree Full-Stack Solutions, LLC so that I could share my passion with you.
+                        In June 2023, I founded Hammontree Full-Stack Solutions LLC, so that I could share my passion with you.
                         There is no doubt that my work ethic, practical experience, and knowledge will allow me to tackle any project that comes my way.
                         <br />
                         <br />
