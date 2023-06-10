@@ -17,6 +17,7 @@ footer {
 
 #copyright {
     color: var(--light-blue);
+    text-align: center;
 }
 
 .icon {
