@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { NavBar } from "./components/Navbar/Navbar";
-import AboutMe from "./components/AboutMe/AboutMe";
-import Project from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
-import Resume from "./components/Resume/Resume";
-import HomePage from './components/HomePage/HomePage';
-import Footer from './components/Footer/Footer';
+import { NavBar } from './components/Navbar';
+import AboutMe from "./components/AboutMe";
+import Project from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import HomePage from './components/HomePage';
+import Footer from './components/Footer';
 import Swal from 'sweetalert2';
 
 // import imgs needed for projects

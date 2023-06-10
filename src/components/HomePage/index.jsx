@@ -1,6 +1,6 @@
 import React from "react";
 import './homepage.css';
-import { WelcomeAnimation } from "../Welcome/Welcome";
+import { WelcomeAnimation } from "../Welcome";
 import MobileWelcome from "../MobileWelcome";
 
 

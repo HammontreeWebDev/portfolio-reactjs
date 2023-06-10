@@ -1,0 +1,73 @@
+/* Navbar component is included in App.js, therefore, we have access to the style.css variables */
+.custom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-bg {
+    display: flex;
+    background-color: var(--trans-shade4);
+}
+
+.nav-font {
+    text-decoration: none;
+    /* font-family: var(--rubik); */
+    color: var(--light-pink);
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-font:hover {
+    color: var(--light-pink);
+    cursor: pointer;
+}
+
+.nav-img {
+    max-width: 25%;
+}
+
+/* media queries */
+
+/* ipad air */
+@media screen and (max-width: 820px) {
+   .nav-font {
+    font-size: 120%;
+   } 
+   .nav-img {
+    max-width: 35%;
+   }
+}
+
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+    .header-bg {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .nav-img {
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 500px) {
+        .nav-font {
+            font-size: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav-font {
+        font-size: 80%;
+    }
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) {
+       .nav-img {
+        max-width: 75%;
+    }
+}
