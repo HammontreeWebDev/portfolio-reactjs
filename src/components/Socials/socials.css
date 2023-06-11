@@ -23,7 +23,8 @@
     justify-content: flex-start;
 }
 
-.social-container h2{
+.social-icon{
+    font-size: 300%;
 color: var(--light-blue);
 }
 
