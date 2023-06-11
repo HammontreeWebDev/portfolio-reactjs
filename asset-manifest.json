@@ -1,23 +1,25 @@
 {
-  "files": {
-    "main.css": "/static/css/main.9fbc97f1.css",
-    "main.js": "/static/js/main.20dac4fd.js",
-    "static/media/final-web-intro.mp4": "/static/media/final-web-intro.6d5d54842992d5992231.mp4",
-    "static/media/mobile-intro.mp4": "/static/media/mobile-intro.53fd38f04c8d157602b9.mp4",
-    "static/media/Technical-Resume.pdf": "/static/media/Technical-Resume.deef5eff5164c41b4d9b.pdf",
-    "static/media/mtgpp.webp": "/static/media/mtgpp.5300c20d3cbb79d63528.webp",
-    "static/media/brofit.webp": "/static/media/brofit.db27d89f1eb0a8559f9d.webp",
-    "static/media/background.webp": "/static/media/background.205b6ab1a76246b08cbe.webp",
-    "static/media/pokewire.webp": "/static/media/pokewire.1ac6742bbc858da41c4a.webp",
-    "static/media/trans-web-header.webp": "/static/media/trans-web-header.7e341c3dc5fe9e2deed6.webp",
-    "static/media/avatar.webp": "/static/media/avatar.de66dd1594d3c3a535c8.webp",
-    "static/media/outta-touch.webp": "/static/media/outta-touch.494f83727aa8c1151464.webp",
-    "index.html": "/index.html",
-    "main.9fbc97f1.css.map": "/static/css/main.9fbc97f1.css.map",
-    "main.20dac4fd.js.map": "/static/js/main.20dac4fd.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.9fbc97f1.css",
-    "static/js/main.20dac4fd.js"
-  ]
+  "main.css": "/static/css/main.b29732bb.chunk.css",
+  "main.js": "/static/js/main.6c87315f.chunk.js",
+  "main.js.map": "/static/js/main.6c87315f.chunk.js.map",
+  "static/css/1.7d02fc7f.chunk.css": "/static/css/1.7d02fc7f.chunk.css",
+  "static/js/1.25f883c2.chunk.js": "/static/js/1.25f883c2.chunk.js",
+  "static/js/1.25f883c2.chunk.js.map": "/static/js/1.25f883c2.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/trans-web-header.webp": "/static/media/trans-web-header.3a6512e9.webp",
+  "static/media/avatar.webp": "/static/media/avatar.9faef537.webp",
+  "static/media/Technical-Resume.pdf": "/static/media/Technical-Resume.3fce44f8.pdf",
+  "static/media/final-web-intro.mp4": "/static/media/final-web-intro.2fbf128f.mp4",
+  "static/media/mobile-intro.mp4": "/static/media/mobile-intro.50274e73.mp4",
+  "static/media/mtgpp.webp": "/static/media/mtgpp.373e6fd3.webp",
+  "static/media/pokewire.webp": "/static/media/pokewire.cd27b443.webp",
+  "static/media/outta-touch.webp": "/static/media/outta-touch.f6ae2738.webp",
+  "static/media/brofit.webp": "/static/media/brofit.01670968.webp",
+  "static/media/style.css": "/static/media/background.50338702.webp",
+  "static/css/1.7d02fc7f.chunk.css.map": "/static/css/1.7d02fc7f.chunk.css.map",
+  "static/css/main.b29732bb.chunk.css.map": "/static/css/main.b29732bb.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.4986dc6dd99f76448e0f9bc851641ca2.js": "/precache-manifest.4986dc6dd99f76448e0f9bc851641ca2.js",
+  "service-worker.js": "/service-worker.js"
 }
