@@ -40,7 +40,7 @@ animation: 1s ${bounceInDownAnimation}
 
 // ----- flip in X Animation ------ //
 const flipInXAnimation = keyframes`${flipInX}`;
-export const FlipInXMain = styled.main`
+export const FlipInXSection = styled.section`
 animation: 1.5s ${flipInXAnimation}
 `;
 
