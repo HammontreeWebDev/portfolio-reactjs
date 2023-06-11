@@ -28,7 +28,7 @@ export function NavBar(props) {
             </Dropdown.Item>
 
             <Dropdown.Item>
-            <button className='nav-font hvr-wobble-horizontal' onClick={props.showResume} >Download Resume</button>
+            <button className='nav-font hvr-wobble-horizontal' onClick={props.showResume} >Resume</button>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
