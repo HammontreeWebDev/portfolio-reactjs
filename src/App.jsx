@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
+import Socials from "./components/Socials";
+import Services from "./components/Services";
 import Swal from 'sweetalert2';
 
 // import imgs needed for projects
@@ -17,12 +19,6 @@ import brofit from "./assets/img/brofit.webp";
 // since we are rendering the main tag around the portfolio components, we import portfolio css here:
 import './components/Portfolio/portfolio.css';
 
-// declare any variables
-let aboutNav = 'About Me';
-let portfolioNav = 'Portfolio';
-let contactNav = 'Contact';
-let resumeNav = 'Resume';
-
 // function to render App after intro animations
 export function App() {
 
@@ -33,6 +29,8 @@ export function App() {
     setShowContact(isFalse);
     setShowResume(isFalse);
     setShowHome(isFalse);
+    setShowServices(isFalse);
+    setShowSocials(isFalse);
   }
 
   const hightlightNav = (e, elem) => {
@@ -88,6 +86,20 @@ export function App() {
     hightlightNav(e);
   };
 
+  const [showServices, setShowServices] = useState(false);
+  const servicesClick = (e) => {
+    setAll(false);
+    setShowServices(true);
+    hightlightNav(e);
+  }
+
+  const [showSocials, setShowSocials] = useState(false);
+  const socialsClick = (e) => {
+    setAll(false);
+    setShowSocials(true);
+    hightlightNav(e);
+  }
+
   // showAbout ? aboutNav = null : aboutNav = 'About Me';
   // showPortfolio ? portfolioNav = null : portfolioNav = 'Portfolio';
   // showContact ? contactNav = null : contactNav = 'Contact';
@@ -103,7 +115,7 @@ export function App() {
 
   return (
     <>
-      <NavBar about={aboutNav} showAbout={aboutClick} portfolio={portfolioNav} showPortfolio={portfolioClick} contact={contactNav} showContact={contactClick} resume={resumeNav} showResume={resumeClick} />
+      <NavBar showAbout={aboutClick} showPortfolio={portfolioClick} showContact={contactClick} showResume={resumeClick} showServices={servicesClick} showSocials={socialsClick} />
       {/* Initially show the 'home page' */}
       {showHome ? <HomePage /> : null}
 
@@ -129,6 +141,12 @@ export function App() {
 
       {/* conditionally render resume section if button is clicked */}
       {showResume ? <Resume /> : null}
+
+      {/* conditionally render Services section if button is clicked */}
+      {showServices ? <Services /> : null}
+
+      {/* conditionally render Socials section if button is clicked */}
+      {showSocials ? <Socials /> : null}
 
       <Footer />
     </>

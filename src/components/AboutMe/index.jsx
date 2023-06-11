@@ -1,13 +1,13 @@
 import React from 'react';
 import './aboutme.css';
-import { FlipInXMain } from '../../utils/Animations';
+import { FlipInXSection } from '../../utils/Animations';
 import avatar from '../../assets/img/avatar.webp';
 
 function AboutMe() {
 
     return (
-        <FlipInXMain className='about-me-body'>
-            <section className=' custom-card'>
+        <main className='about-me-body main-bg'>
+            <FlipInXSection className=' custom-card'>
                 <h2 className='custom-card-header'>
                     About Me
                 </h2>
@@ -36,8 +36,8 @@ function AboutMe() {
                         Again, thank you for being here. I am looking forward to hearing from you!
                     </p>
                 </div>
-            </section>
-        </FlipInXMain>
+            </FlipInXSection>
+        </main>
     )
 }
 
