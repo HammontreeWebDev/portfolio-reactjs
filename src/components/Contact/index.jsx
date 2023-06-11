@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
-import { RotateInUpRightMain } from '../../utils/Animations'
+import { RotateInUpRightSection } from '../../utils/Animations'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
@@ -94,8 +94,8 @@ function Contact() {
 
 
     return (
-        <RotateInUpRightMain className='contact-main'>
-            <section className='form-card'>
+        <main className='contact-main'>
+            <RotateInUpRightSection className='form-card'>
                 <h2 className='form-header'>Contact</h2>
                 <form className='form-card-body' onSubmit={handleOnSubmit}>
                     <div className="mb-3">
@@ -112,8 +112,8 @@ function Contact() {
                     </div>
                     <button className='custom-btn hvr-shrink' type='submit'>Submit</button>
                 </form>
-            </section>
-        </RotateInUpRightMain>
+            </RotateInUpRightSection>
+        </main>
     );
 };
 

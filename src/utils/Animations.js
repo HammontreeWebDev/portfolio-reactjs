@@ -58,7 +58,7 @@ animation: 1.5s ${zoomInRightAnimation}
 
 // ----- rotateInUpRight Animation ------ //
 const rotateInUpRightAnimation = keyframes`${rotateInUpRight}`;
-export const RotateInUpRightMain = styled.main`
+export const RotateInUpRightSection = styled.section`
 animation: 1.5s ${rotateInUpRightAnimation}
 `;
 
