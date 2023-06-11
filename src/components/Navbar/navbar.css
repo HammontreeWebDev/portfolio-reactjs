@@ -21,6 +21,11 @@
     border: none;
 }
 
+.dropdown-item:hover {
+    /* !important to override bootstrap instead of creating an id for each dropdown item */
+    background-color: transparent !important;
+}
+
 .header-bg {
     display: flex;
     background-color: var(--trans-shade4);

@@ -12,23 +12,23 @@ export function NavBar(props) {
     <BounceInDownHeader className='header-bg'>
       <img className='nav-img' src={navNameLogo} alt='Avatar of Kaileb with his name and text that says Full-Stack Web Development' />
       <nav className='container-fluid custom-nav'>
-        <button className='nav-font' onClick={props.showAbout} >About Me</button>
-        <button className='nav-font' onClick={props.showPortfolio} >Portfolio</button>
-        <button className='nav-font' onClick={props.showServices} >Services</button>
+        <button className='nav-font hvr-wobble-horizontal' onClick={props.showAbout} >About Me</button>
+        <button className='nav-font hvr-wobble-horizontal' onClick={props.showPortfolio} >Portfolio</button>
+        <button className='nav-font hvr-wobble-horizontal' onClick={props.showServices} >Services</button>
         <Dropdown>
-          <Dropdown.Toggle id='custom-dropdown'>
+          <Dropdown.Toggle id='custom-dropdown' className='hvr-wobble-horizontal'>
             More
           </Dropdown.Toggle>
 
           <Dropdown.Menu id='custom-menu'>
-            <Dropdown.Item><button className='nav-font' onClick={props.showSocials}>Socials</button></Dropdown.Item>
+            <Dropdown.Item><button className='nav-font hvr-wobble-horizontal' onClick={props.showSocials}>Socials</button></Dropdown.Item>
 
             <Dropdown.Item>
-              <button className='nav-font' onClick={props.showContact} >Contact Form</button>
+              <button className='nav-font hvr-wobble-horizontal' onClick={props.showContact} >Contact Form</button>
             </Dropdown.Item>
 
             <Dropdown.Item>
-            <button className='nav-font' onClick={props.showResume} >Download Resume</button>
+            <button className='nav-font hvr-wobble-horizontal' onClick={props.showResume} >Download Resume</button>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
