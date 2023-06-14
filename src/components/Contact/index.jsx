@@ -94,6 +94,15 @@ function Contact() {
 
     // border: none; min-height: 600px
 
+    // adjust height of iframe
+    const iframe = document.querySelector('#myIframe');
+    const [height, setHeight] = useState('0px');
+    const ref = React.useRef();
+    const adjustHeight = () => {
+        // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        setHeight(ref.current.contentWindow.document.body.scrollHeight + 'px');   
+    }
+
     return (
         <main className='contact-main'>
 
@@ -117,7 +126,7 @@ function Contact() {
             </RotateInUpRightSection>
 
             <FadeInDiv id='interest-container'>
-                <iframe src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width="100%" height="100%" style={{ border: 'none', minHeight: 800 }}></iframe>
+                <iframe ref={ref} id='myIframe' src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width='100%' height={height} onLoad={adjustHeight} onLoadedData={adjustHeight} style={{ border: 'none'}}></iframe>
             </FadeInDiv>
         </main>
     );
