@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.7a86ba5a.chunk.css",
-  "main.js": "/static/js/main.aca7970c.chunk.js",
-  "main.js.map": "/static/js/main.aca7970c.chunk.js.map",
+  "main.css": "/static/css/main.c741dc92.chunk.css",
+  "main.js": "/static/js/main.afafc474.chunk.js",
+  "main.js.map": "/static/js/main.afafc474.chunk.js.map",
   "static/css/1.7d02fc7f.chunk.css": "/static/css/1.7d02fc7f.chunk.css",
   "static/js/1.25f883c2.chunk.js": "/static/js/1.25f883c2.chunk.js",
   "static/js/1.25f883c2.chunk.js.map": "/static/js/1.25f883c2.chunk.js.map",
@@ -17,9 +17,9 @@
   "static/media/outta-touch.webp": "/static/media/outta-touch.f6ae2738.webp",
   "static/media/brofit.webp": "/static/media/brofit.01670968.webp",
   "static/media/style.css": "/static/media/background.50338702.webp",
+  "static/css/main.c741dc92.chunk.css.map": "/static/css/main.c741dc92.chunk.css.map",
   "static/css/1.7d02fc7f.chunk.css.map": "/static/css/1.7d02fc7f.chunk.css.map",
-  "static/css/main.7a86ba5a.chunk.css.map": "/static/css/main.7a86ba5a.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.abcdb026bcac0ecf0a50f66a96a5138b.js": "/precache-manifest.abcdb026bcac0ecf0a50f66a96a5138b.js",
+  "precache-manifest.2c970ef863055c52416e5a08660e518a.js": "/precache-manifest.2c970ef863055c52416e5a08660e518a.js",
   "service-worker.js": "/service-worker.js"
 }
