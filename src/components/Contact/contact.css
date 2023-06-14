@@ -2,9 +2,13 @@
 .contact-main {
     /* font-family: var(--rubik); */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    min-height: 90vh;
+    min-height: 150vh;
+}
+#interest-container {
+    width: 100%;
 }
 .form-card {
     width: 70%;

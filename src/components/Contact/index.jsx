@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
-import { RotateInUpRightSection } from '../../utils/Animations'
+import { FadeInDiv, RotateInUpRightSection } from '../../utils/Animations'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
@@ -58,17 +58,17 @@ function Contact() {
 
     const blankName = (e) => {
         if (e.target.value === '') {
-        setNameRequired(true);
+            setNameRequired(true);
         }
     };
     const blankEmail = (e) => {
         if (e.target.value === '') {
-        setEmailRequired(true);
+            setEmailRequired(true);
         }
     };
     const blankMessage = (e) => {
         if (e.target.value === '') {
-        setMessageRequired(true);
+            setMessageRequired(true);
         }
     };
     const validName = () => {
@@ -77,7 +77,7 @@ function Contact() {
     const validEmail = (e) => {
         setEmailRequired(false);
         if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(e.target.value)) {
-        setCheckEmail(false);
+            setCheckEmail(false);
         }
         else {
             setCheckEmail(true);
@@ -92,19 +92,21 @@ function Contact() {
     const isEmailValid = checkEmail ? <span className='text-danger'> * please enter a valid email address</span> : null;
     const isMessageRequired = messageRequired ? <span className='text-danger'> * required</span> : null;
 
+    // border: none; min-height: 600px
 
     return (
         <main className='contact-main'>
+
             <RotateInUpRightSection className='form-card'>
-                <h2 className='form-header'>Contact</h2>
+                <h2 className='form-header'>General Inquiry Form</h2>
                 <form className='form-card-body' onSubmit={handleOnSubmit}>
                     <div className="mb-3">
                         <label htmlFor="nameInput" className="form-label">Name:{isNameRequired} </label>
-                        <input type="text" className="form-control" id="nameInput" name='from_name' placeholder="First Name Last Name" onMouseLeave={blankName} onChange={validName}/>
+                        <input type="text" className="form-control" id="nameInput" name='from_name' placeholder="First Name Last Name" onMouseLeave={blankName} onChange={validName} />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="emailInput" className="form-label">Email address:{isEmailRequired}{isEmailValid}</label>
-                        <input type="email" className="form-control" id="emailInput" name='from_email' placeholder="myemail@example.com" onMouseLeave={blankEmail} onChange={validEmail}/>
+                        <input type="email" className="form-control" id="emailInput" name='from_email' placeholder="myemail@example.com" onMouseLeave={blankEmail} onChange={validEmail} />
                     </div>
                     <div className="mb-3">
                         <label htmlFor='messageInput' className="form-label">Message:{isMessageRequired}</label>
@@ -113,6 +115,10 @@ function Contact() {
                     <button className='custom-btn hvr-shrink' type='submit'>Submit</button>
                 </form>
             </RotateInUpRightSection>
+
+            <FadeInDiv id='interest-container'>
+                <iframe src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width="100%" height="100%" style={{ border: 'none', minHeight: 800 }}></iframe>
+            </FadeInDiv>
         </main>
     );
 };
