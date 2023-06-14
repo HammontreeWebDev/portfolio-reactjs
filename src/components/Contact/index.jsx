@@ -100,7 +100,7 @@ function Contact() {
     const ref = React.useRef();
     const adjustHeight = () => {
         // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-        setHeight(ref.current.contentWindow.document.body.scrollHeight + 'px');   
+        setHeight(ref.current.contentWindow.document.body.scrollHeight + 'px');
     }
 
     return (
@@ -126,9 +126,9 @@ function Contact() {
             </RotateInUpRightSection>
 
             <RotateInUpRightSection className='form-card interest-form'>
-            <h2 className='form-header'>Start Your Project</h2>
+                <h2 className='form-header'>Start Your Project</h2>
                 {/* <button className='custom-btn'>Get Started</button> */}
-                <iframe id='interest-iframe' src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width="100%" height="100%" style={{border: 'none'}}></iframe>
+                <iframe id='interest-iframe' src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width="100%" height="100%" style={{ border: 'none' }}></iframe>
             </RotateInUpRightSection>
         </main>
     );
