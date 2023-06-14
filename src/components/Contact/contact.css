@@ -47,6 +47,10 @@ label {
         width: 85%;
     }
 
+    .contact-main {
+        min-height: 160vh;
+    }
+
 }
 
 /* Samsung Galaxy S20 Ultra */
