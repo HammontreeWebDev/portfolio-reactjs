@@ -150,7 +150,7 @@ function Contact(props) {
                     <br />
                     <span className='consult-text'>
                         Book Now For A&nbsp;
-                    <a href='https://app.hellobonsai.com/s/kaileb-hammontree-1/consultation' target='_blank' rel="noopener noreferrer" className='consult-link'>Free Consultation</a>
+                    <a id="consult" href='https://app.hellobonsai.com/s/kaileb-hammontree-1/consultation' target='_blank' rel="noopener noreferrer" className='consult-link'>Free Consultation</a>
                     </span>
                     </h2>
                     {/* <button className='custom-btn'>Get Started</button> */}
