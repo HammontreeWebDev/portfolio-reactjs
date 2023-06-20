@@ -2,12 +2,12 @@ import React from 'react';
 import './aboutme.css';
 import { FlipInXSection } from '../../utils/Animations';
 import avatar from '../../assets/img/avatar.webp';
+import { NavBar } from '../../components/Navbar';
 
 function AboutMe(props) {
 
     return (
         <>
-        {props.nav}
         <main className='about-me-body main-bg'>
             <FlipInXSection className=' custom-card'>
                 <h2 className='custom-card-header'>

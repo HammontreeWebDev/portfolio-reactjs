@@ -3,6 +3,7 @@ import './contact.css';
 import { RotateInUpRightSection } from '../../utils/Animations'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { NavBar } from '../../components/Navbar';
 
 // const REACT_APP_SERVICE_ID = process.env(REACT_APP_SERVICE_ID);
 // const REACT_APP_TEMPLATE_ID = process.env(REACT_APP_TEMPLATE_ID);
@@ -105,7 +106,6 @@ function Contact(props) {
 
     return (
         <>
-        {props.nav}
         <main className='contact-main'>
 
             <RotateInUpRightSection className='form-card'>

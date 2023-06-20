@@ -8,21 +8,25 @@ import HomePage from './Pages/HomePage';
 import Resume from './Pages/Resume';
 import Services from './Pages/Services';
 import Socials from './Pages/Socials';
+import PortfolioPage from './Pages/PortfolioPage';
 
 // import components
 import { NavBar } from './components/Navbar'
 
 export function App() {
+  return(
   <BrowserRouter>
+  <NavBar />
   <Routes>
-    <Route path='/' element={<HomePage nav = { < NavBar /> } />} />
-    <Route path='/about_me' element={<AboutMe nav = {< NavBar />} />} />
-    <Route path='/portfolio' element={<Portfolio />} />
-    <Route path='/services' element={<Services nav={ < NavBar />} />} />
-    <Route path='/socials' element={<Socials nav={ < NavBar />} />} />
-    <Route path='/contact' element={<Contact nav={ < NavBar />} />} />
-    <Route path='/resume' element={<Resume nav={< NavBar />}/>} />
+    <Route path='/' element={<HomePage />} />
+    <Route path='/about_me' element={<AboutMe />} />
+    <Route path='/portfolio' element={<PortfolioPage />} />
+    <Route path='/services' element={<Services />} />
+    <Route path='/socials' element={<Socials />} />
+    <Route path='/contact' element={<Contact />} />
+    <Route path='/resume' element={<Resume />} />
 
   </Routes>
   </BrowserRouter>
+  )
 }

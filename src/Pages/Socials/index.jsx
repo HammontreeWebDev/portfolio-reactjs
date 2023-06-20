@@ -2,13 +2,13 @@ import React from "react";
 import { FadeInDiv } from "../../utils/Animations";
 import './socials.css'
 import { Icon, enableCache } from '@iconify/react';
+import { NavBar } from "../../components/Navbar";
 
 enableCache('local');
 
 function Socials(props) {
     return (
         <>
-        {props.nav}
         <main className="socials-main">
             <section className="social-wrapper">
                 <FadeInDiv className="social-container">

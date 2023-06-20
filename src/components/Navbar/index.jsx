@@ -17,7 +17,7 @@ export function NavBar(props) {
       <nav className='container-fluid custom-nav'>
         <button className='nav-font hvr-wobble-horizontal' onClick={() => navigate('/about_me')} >About Me</button>
         <button className='nav-font hvr-wobble-horizontal' onClick={() => navigate('/portfolio')} >Portfolio</button>
-        <button className='nav-font hvr-wobble-horizontal' onClick={navigate('/services')} >Services</button>
+        <button className='nav-font hvr-wobble-horizontal' onClick={() => navigate('/services')} >Services</button>
         <Dropdown>
           <Dropdown.Toggle id='custom-dropdown' className='hvr-wobble-horizontal'>
             More
