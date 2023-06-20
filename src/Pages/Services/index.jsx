@@ -3,8 +3,10 @@ import './services.css';
 import { Icon } from '@iconify/react';
 import { FadeInUpSection, BounceInDownH1 } from "../../utils/Animations";
 
-function Services() {
+function Services(props) {
     return (
+        <>
+        {props.nav}
         <main className="services-main">
             <BounceInDownH1>Web Development <Icon icon="icon-park-solid:locking-web"/></BounceInDownH1>
             <div className="sub-container">
@@ -45,6 +47,7 @@ function Services() {
 
             </div>
         </main>
+        </>
     )
 }
 

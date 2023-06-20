@@ -5,8 +5,10 @@ import { Icon, enableCache } from '@iconify/react';
 
 enableCache('local');
 
-function Socials() {
+function Socials(props) {
     return (
+        <>
+        {props.nav}
         <main className="socials-main">
             <section className="social-wrapper">
                 <FadeInDiv className="social-container">
@@ -43,6 +45,7 @@ function Socials() {
                 </FadeInDiv>
             </section>
         </main>
+        </>
     );
 }
 

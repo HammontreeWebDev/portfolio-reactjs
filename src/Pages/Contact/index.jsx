@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 // const REACT_APP_USER_ID = process.env(REACT_APP_USER_ID);
 
 
-function Contact() {
+function Contact(props) {
 
     const serviceID = process.env.REACT_APP_SERVICE_ID;
     const templateID = process.env.REACT_APP_TEMPLATE_ID;
@@ -104,6 +104,8 @@ function Contact() {
     }
 
     return (
+        <>
+        {props.nav}
         <main className='contact-main'>
 
             <RotateInUpRightSection className='form-card'>
@@ -131,6 +133,7 @@ function Contact() {
                 <iframe id='interest-iframe' src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width="100%" height="100%" style={{ border: 'none' }}></iframe>
             </RotateInUpRightSection>
         </main>
+        </>
     );
 };
 

@@ -5,9 +5,11 @@ import resume from './Technical-Resume.pdf';
 import { Icon } from '@iconify/react';
 
 // we copied the about me card here, so it is inheriting some of the custom card classes from that css file
-function Resume() {
+function Resume(props) {
 
     return (
+        <>
+        {props.nav}
         <main className='about-me-body'>
             <RollInSection className=' custom-card'>
                 <div className='resume-card-header'>
@@ -91,6 +93,7 @@ function Resume() {
                 </div>
             </RollInSection>
         </main>
+        </>
     )
 }
 
