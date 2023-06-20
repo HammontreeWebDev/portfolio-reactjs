@@ -1,35 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "afafc474de3fe9a6198c",
-    "url": "/static/css/main.c741dc92.chunk.css"
+    "revision": "1038fb74dd90d8b08efd",
+    "url": "/static/css/main.334c60ec.chunk.css"
   },
   {
-    "revision": "afafc474de3fe9a6198c",
-    "url": "/static/js/main.afafc474.chunk.js"
+    "revision": "1038fb74dd90d8b08efd",
+    "url": "/static/js/main.28d627a9.chunk.js"
   },
   {
-    "revision": "25f883c26fa2b192f694",
-    "url": "/static/css/1.7d02fc7f.chunk.css"
+    "revision": "42ac5946195a7306e2a5",
+    "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "25f883c26fa2b192f694",
-    "url": "/static/js/1.25f883c2.chunk.js"
+    "revision": "32fbe79d5b0782c5f8aa",
+    "url": "/static/css/2.1fc03ead.chunk.css"
   },
   {
-    "revision": "229c360febb4351a89df",
-    "url": "/static/js/runtime~main.229c360f.js"
-  },
-  {
-    "revision": "3a6512e9095d83c22d1083b2e5469add",
-    "url": "/static/media/trans-web-header.3a6512e9.webp"
+    "revision": "32fbe79d5b0782c5f8aa",
+    "url": "/static/js/2.f7e106d5.chunk.js"
   },
   {
     "revision": "9faef537807307a7b3f2de39b51c1d57",
     "url": "/static/media/avatar.9faef537.webp"
-  },
-  {
-    "revision": "3fce44f8ad6595d08630038a305f3424",
-    "url": "/static/media/Technical-Resume.3fce44f8.pdf"
   },
   {
     "revision": "2fbf128f30c4dc81c6b805eec477313f",
@@ -38,6 +30,10 @@ self.__precacheManifest = [
   {
     "revision": "50274e73523c565d88591fb6b0884ee2",
     "url": "/static/media/mobile-intro.50274e73.mp4"
+  },
+  {
+    "revision": "3fce44f8ad6595d08630038a305f3424",
+    "url": "/static/media/Technical-Resume.3fce44f8.pdf"
   },
   {
     "revision": "373e6fd32f02bf0f4030ab4b98462a54",
@@ -56,11 +52,15 @@ self.__precacheManifest = [
     "url": "/static/media/brofit.01670968.webp"
   },
   {
+    "revision": "3a6512e9095d83c22d1083b2e5469add",
+    "url": "/static/media/trans-web-header.3a6512e9.webp"
+  },
+  {
     "revision": "5033870229f09850ac9589e694f5655a",
     "url": "/static/media/background.50338702.webp"
   },
   {
-    "revision": "47d6485290738de576047e77c717f573",
+    "revision": "f8667248685718ee0e104f4a8bf31d3a",
     "url": "/index.html"
   }
 ];
