@@ -89,7 +89,7 @@ export function NavBar(props) {
                   handleClick('/contact');
                 }}
               >
-                Contact Form
+                Contact Me
               </button>
             </Dropdown.Item>
 

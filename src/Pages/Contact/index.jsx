@@ -146,7 +146,13 @@ function Contact(props) {
                 </RotateInUpRightSection>
 
                 <RotateInUpRightSection className='form-card interest-form'>
-                    <h2 className='form-header'>Start Your Project</h2>
+                    <h2 className='form-header'>Start Your Project 
+                    <br />
+                    <span className='consult-text'>
+                        Book Now For A&nbsp;
+                    <a href='https://app.hellobonsai.com/s/kaileb-hammontree-1/consultation' target='_blank' rel="noopener noreferrer" className='consult-link'>Free Consultation</a>
+                    </span>
+                    </h2>
                     {/* <button className='custom-btn'>Get Started</button> */}
                     <iframe title='interest-form' id='interest-iframe' src="https://app.hellobonsai.com/f/a14a29cd17402aa?embed=true" width="100%" height="100%" style={{ border: 'none' }}></iframe>
                 </RotateInUpRightSection>
