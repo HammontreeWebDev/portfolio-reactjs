@@ -3,7 +3,6 @@ import './resume.css';
 import { RollInSection } from '../../utils/Animations';
 import resume from './Technical-Resume.pdf';
 import { Icon } from '@iconify/react';
-import { NavBar } from '../../components/Navbar';
 
 // we copied the about me card here, so it is inheriting some of the custom card classes from that css file
 function Resume(props) {

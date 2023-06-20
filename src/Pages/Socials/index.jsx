@@ -2,7 +2,6 @@ import React from "react";
 import { FadeInDiv } from "../../utils/Animations";
 import './socials.css'
 import { Icon, enableCache } from '@iconify/react';
-import { NavBar } from "../../components/Navbar";
 
 enableCache('local');
 
@@ -14,7 +13,7 @@ function Socials(props) {
                 <FadeInDiv className="social-container">
 
                     <Icon className="social-icon" icon="raphael:github" />
-                    <a href="https://github.com/HammontreeWebDev" target="_blank" >
+                    <a href="https://github.com/HammontreeWebDev" target="_blank" rel="noopener noreferrer" >
                         Visit GitHub
                     </a>
 
@@ -25,7 +24,7 @@ function Socials(props) {
                 <FadeInDiv className="social-container">
 
                     <Icon className="social-icon" icon="uil:linkedin-alt" />
-                    <a href="https://www.linkedin.com/in/kaileb-hammontree/" target="_blank" >
+                    <a href="https://www.linkedin.com/in/kaileb-hammontree/" target="_blank" rel="noopener noreferrer">
                         Visit LinkedIn
                     </a>
 
@@ -36,7 +35,7 @@ function Socials(props) {
                 <FadeInDiv className="social-container">
 
                     <Icon className="social-icon" icon="tabler:brand-facebook" />
-                    <a href="https://www.facebook.com/profile.php?id=100093003297638" target="_blank" >
+                    <a href="https://www.facebook.com/profile.php?id=100093003297638" target="_blank" rel="noopener noreferrer">
                         Visit Facebook
                     </a>
 

@@ -2,7 +2,6 @@ import React from "react";
 import './services.css';
 import { Icon } from '@iconify/react';
 import { FadeInUpSection, BounceInDownH1 } from "../../utils/Animations";
-import { NavBar } from "../../components/Navbar";
 
 function Services(props) {
     return (

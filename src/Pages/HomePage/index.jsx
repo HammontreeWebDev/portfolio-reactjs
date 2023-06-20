@@ -2,7 +2,6 @@ import React from "react";
 import './homepage.css';
 import { WelcomeAnimation } from "../../components/Welcome";
 import MobileWelcome from "../../components/MobileWelcome";
-import { NavBar } from "../../components/Navbar";
 
 
 const HomePage = (props) => {

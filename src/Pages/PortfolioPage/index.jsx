@@ -8,7 +8,6 @@ import mtgApp from "../../assets/img/mtgpp.webp";
 import pokeApp from "../../assets/img/pokewire.webp";
 import outtaTouch from "../../assets/img/outta-touch.webp";
 import brofit from "../../assets/img/brofit.webp";
-import { NavBar } from "../../components/Navbar";
 
 const PortfolioPage = (props) => {
 

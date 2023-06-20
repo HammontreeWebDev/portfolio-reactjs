@@ -2,7 +2,6 @@ import React from 'react';
 import './aboutme.css';
 import { FlipInXSection } from '../../utils/Animations';
 import avatar from '../../assets/img/avatar.webp';
-import { NavBar } from '../../components/Navbar';
 
 function AboutMe(props) {
 

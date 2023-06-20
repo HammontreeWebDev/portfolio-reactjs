@@ -14,8 +14,8 @@ function Project(props) {
                 <h1 className='project-title'>{props.appTitle}</h1>
                 <p className='project-content'> <strong>Built With: </strong><span className='alt-color'>{props.content}</span></p>
                 <div className='project-icon-container'>
-                    <a className='project-links' href={props.repository} target='_blank' onClick={props.click}><Icon icon="uim:github-alt" /></a>
-                    <a className='project-links' href={props.deployment} target='_blank'><Icon icon="eos-icons:application-instance" /></a>
+                    <a className='project-links' href={props.repository} target='_blank' rel="noopener noreferrer" onClick={props.click}><Icon icon="uim:github-alt" /></a>
+                    <a className='project-links' href={props.deployment} target='_blank' rel="noopener noreferrer"><Icon icon="eos-icons:application-instance" /></a>
                 </div>
             </div>
         </ZoomInRightDiv>
