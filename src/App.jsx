@@ -11,22 +11,24 @@ import Socials from './Pages/Socials';
 import PortfolioPage from './Pages/PortfolioPage';
 
 // import components
-import { NavBar } from './components/Navbar'
+import { NavBar } from './components/Navbar';
+import Footer from './components/Footer';
 
 export function App() {
-  return(
-  <BrowserRouter>
-  <NavBar />
-  <Routes>
-    <Route path='/' element={<HomePage />} />
-    <Route path='/about_me' element={<AboutMe />} />
-    <Route path='/portfolio' element={<PortfolioPage />} />
-    <Route path='/services' element={<Services />} />
-    <Route path='/socials' element={<Socials />} />
-    <Route path='/contact' element={<Contact />} />
-    <Route path='/resume' element={<Resume />} />
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about_me' element={<AboutMe />} />
+        <Route path='/portfolio' element={<PortfolioPage />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/socials' element={<Socials />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/resume' element={<Resume />} />
 
-  </Routes>
-  </BrowserRouter>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
