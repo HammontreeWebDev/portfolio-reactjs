@@ -13,6 +13,16 @@
     text-align: center;
 }
 
+.disclaimer{
+    font-size: 16px;
+    color: white;
+}
+
+.contact-link {
+    color: var(--light-pink);
+    text-underline-offset: 5%;
+}
+
 .sub-container {
     display: flex;
     flex-flow: column wrap;

@@ -73,6 +73,12 @@ export const FadeInDiv = styled.div`
 animation: 1.9s ${fadeInAnimation}
 `;
 
+// longer fadeIn Animation
+const longerFadeInAnimation = keyframes`${fadeIn}`;
+export const LongFadeInDiv = styled.div`
+animation: 3s ${longerFadeInAnimation}
+`;
+
 // Simple Bounce Main
 const BounceMainAnimation = keyframes`${bounce}`;
 export const BounceMain = styled.div`

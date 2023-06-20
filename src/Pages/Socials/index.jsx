@@ -5,14 +5,15 @@ import { Icon, enableCache } from '@iconify/react';
 
 enableCache('local');
 
-function Socials() {
+function Socials(props) {
     return (
+        <>
         <main className="socials-main">
             <section className="social-wrapper">
                 <FadeInDiv className="social-container">
 
                     <Icon className="social-icon" icon="raphael:github" />
-                    <a href="https://github.com/HammontreeWebDev" target="_blank" >
+                    <a href="https://github.com/HammontreeWebDev" target="_blank" rel="noopener noreferrer" >
                         Visit GitHub
                     </a>
 
@@ -23,7 +24,7 @@ function Socials() {
                 <FadeInDiv className="social-container">
 
                     <Icon className="social-icon" icon="uil:linkedin-alt" />
-                    <a href="https://www.linkedin.com/in/kaileb-hammontree/" target="_blank" >
+                    <a href="https://www.linkedin.com/in/kaileb-hammontree/" target="_blank" rel="noopener noreferrer">
                         Visit LinkedIn
                     </a>
 
@@ -34,7 +35,7 @@ function Socials() {
                 <FadeInDiv className="social-container">
 
                     <Icon className="social-icon" icon="tabler:brand-facebook" />
-                    <a href="https://www.facebook.com/profile.php?id=100093003297638" target="_blank" >
+                    <a href="https://www.facebook.com/profile.php?id=100093003297638" target="_blank" rel="noopener noreferrer">
                         Visit Facebook
                     </a>
 
@@ -43,6 +44,7 @@ function Socials() {
                 </FadeInDiv>
             </section>
         </main>
+        </>
     );
 }
 

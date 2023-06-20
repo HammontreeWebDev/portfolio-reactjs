@@ -3,9 +3,10 @@ import './aboutme.css';
 import { FlipInXSection } from '../../utils/Animations';
 import avatar from '../../assets/img/avatar.webp';
 
-function AboutMe() {
+function AboutMe(props) {
 
     return (
+        <>
         <main className='about-me-body main-bg'>
             <FlipInXSection className=' custom-card'>
                 <h2 className='custom-card-header'>
@@ -38,6 +39,7 @@ function AboutMe() {
                 </div>
             </FlipInXSection>
         </main>
+        </>
     )
 }
 
