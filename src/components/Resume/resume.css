@@ -20,7 +20,7 @@
 .resume-card-header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--light-blue);
     color: var(--shade4);
@@ -30,13 +30,17 @@
     border-top-right-radius: 1rem;
 }
 
+.resume-card-header h2 {
+    width: 100%;
+    text-align: center;
+}
+
 .resume-body {
     text-align: center;
 }
 
 .resume-btn {
     /* font-family: var(--distressed); */
-    font-size: 200%;
     color: var(--shade4);
     text-decoration: none;
 

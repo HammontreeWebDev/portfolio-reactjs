@@ -11,8 +11,7 @@ function Resume() {
         <main className='about-me-body'>
             <RollInSection className=' custom-card'>
                 <div className='resume-card-header'>
-                    <h2> Resume </h2>
-                    <a className='resume-btn hvr-skew hvr-pulse-grow' href={resume} download='Kaileb_Hammontree_Resume' target='blank'><Icon icon='material-symbols:arrow-forward-rounded'/> <Icon icon='icon-park-solid:folder-download'/></a>
+                    <h2> Resume <span><a className='resume-btn hvr-skew hvr-pulse-grow' href={resume} download='Kaileb_Hammontree_Resume' target='blank'><Icon icon='material-symbols:arrow-forward-rounded'/> <Icon icon='icon-park-solid:folder-download'/></a></span> </h2>
                 </div>
                 <div className='custom-card-body resume-body'>
                     <h5 className='skill-title'>Front-End Skills:</h5>
