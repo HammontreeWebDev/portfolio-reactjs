@@ -1,4 +1,12 @@
 # ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) Portfolio
+  ## **NOTICE**
+  This Project is no longer being maintained.
+  <br>
+  It has been migrated from CRA (Create-React-App) to Next.js
+  <br>
+  The updated project repository can be found at https://github.com/HammontreeWebDev/hammontree-full-stack-solutions-llc
+  <br>
+  The live Website can now be found at https://www.kailebhammontree.com/
   ## Table of Contents
   1. **[Description](#description)**<br>
   3. **[Usage](#usage)**<br>
@@ -10,7 +18,7 @@
   ## Usage
   This would be used for anyone interested in learning about my work so that they can gauge whether they would like to employ me to create something for them and/or for other developers to gauge whether or not they would like to collaborate with me on a project.
   ## Deployment
-  Live Website: https://hammontreewebdev.github.io/portfolio-reactjs/
+  Live Website: *Updated*: https://www.kailebhammontree.com/
   ## License
   The MIT License (https://opensource.org/licenses/MIT)
   <br>
